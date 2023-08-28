@@ -1,0 +1,74 @@
+requests:
+  title: Requests per min
+  unit: REQUESTS_PER_SECOND
+  queries:
+    aws:
+      select: rate(sum(aws.elb.RequestCount), 1 minute)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+    awsSample:
+      select: rate(sum(provider.requestCount.Sum), 1 minute)
+      from: LoadBalancerSample
+      where: provider='Elb'
+      eventId: entityGuid
+      eventName: entityName
+latency:
+  title: Latency (s)
+  unit: SECONDS
+  queries:
+    aws:
+      select: average(aws.elb.Latency)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+    awsSample:
+      select: average(provider.latency.Average)
+      from: LoadBalancerSample
+      where: provider='Elb'
+      eventId: entityGuid
+      eventName: entityName
+errorRate:
+  title: Error rate
+  unit: PERCENTAGE
+  queries:
+    aws:
+      select: rate(sum(aws.elb.BackendConnectionErrors), 1 minute)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+    awsSample:
+      select: rate(sum(provider.backendConnectionErrors.Sum), 1 minute)
+      from: LoadBalancerSample
+      where: provider='Elb'
+      eventId: entityGuid
+      eventName: entityName
+unhealthyHosts:
+  title: Unhealthy hosts
+  unit: COUNT
+  queries:
+    aws:
+      select: average(aws.elb.UnhealthyHostCount)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+    awsSample:
+      select: average(`provider.unhealthyHostCount.Average`)
+      from: LoadBalancerSample
+      where: provider='Elb'
+      eventId: entityGuid
+      eventName: entityName
+surgeQueueLength:
+  queries:
+      aws:
+        select: max(aws.elb.SurgeQueueLength)
+        from: Metric
+        eventId: entity.guid
+      awsSample:
+        select: max(`provider.surgeQueueLength.Maximum`)
+        from: LoadBalancerSample
+        where: provider='Elb'
+        eventId: entityGuid
+        eventName: entityName
+  unit: COUNT
+  title: Surge queue length

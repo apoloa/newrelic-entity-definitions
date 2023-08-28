@@ -1,0 +1,24 @@
+appLaunchCount:
+  goldenMetric: appLaunchCountMetric
+  unit: COUNT
+  title: App launches
+crashCount:
+  goldenMetric: crashCount
+  unit: COUNT
+  title: Crashes
+httpResponseTimeMs:
+  goldenMetric: httpResponseTimeMsMetric
+  title: HTTP response time (ms)
+  unit: MS
+networkFailuresCount:
+  goldenMetric: networkFailuresCountMetric
+  title: Network errors count
+  unit: COUNT
+httpErrorsRate:
+  goldenMetric: httpErrorsRateMetric
+  title: HTTP errors rate
+  unit: PERCENTAGE
+requestsPerMinute:
+  goldenMetric: requestsPerMinute
+  title: Requests per minute
+  unit: REQUESTS_PER_MINUTE

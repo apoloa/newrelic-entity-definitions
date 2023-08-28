@@ -1,0 +1,16 @@
+domain: INFRA
+type: AWSREDSHIFTNODE
+goldenTags:
+- aws.awsRegion
+- aws.region
+- aws.clusterId
+- aws.accountId
+- aws.nodeId
+- account
+- label.Team
+- label.team
+- label.env
+- label.environment
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

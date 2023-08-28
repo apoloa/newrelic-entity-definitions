@@ -1,0 +1,24 @@
+domain: INFRA
+type: AZURESQLDATABASE
+goldenTags:
+- azure.regionName
+- azure.subscriptionId
+- azure.type
+- azure.resourceGroupName
+- azure.provider.edition
+- azure.provider.isDataWarehouse
+- azure.provider.sqlServerName
+- account
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true
+synthesis:
+  rules:
+  - identifier: azure.resourceId
+    name: displayName
+    legacyFeatures:
+      overrideGuidType: true
+    encodeIdentifierInGUID: true
+    conditions:
+      - attribute: azure.resourceType
+        value: microsoft.sql/servers/databases

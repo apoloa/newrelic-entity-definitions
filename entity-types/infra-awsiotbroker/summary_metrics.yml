@@ -1,0 +1,17 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: AWS account
+  unit: STRING
+success:
+  goldenMetric: success
+  unit: COUNT
+  title: Successful requests
+errors:
+  goldenMetric: errors
+  unit: COUNT
+  title: Errors
+throttles:
+  goldenMetric: throttles
+  unit: COUNT
+  title: Throttles

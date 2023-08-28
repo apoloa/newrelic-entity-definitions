@@ -1,0 +1,56 @@
+cacheHitRatio:
+  title: Cache hit ratio (%)
+  unit: PERCENTAGE
+  queries:
+    gcp:
+      select: average(gcp.redis.instance.stats.cacheHitRatio)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+    gcpSample:
+      select: average(stats.CacheHitRatio)
+      from: GcpRedisInstanceSample
+      eventId: entityGuid
+      eventName: entityName
+cpuSecondsConsumedS:
+  title: CPU-seconds consumed (s)
+  unit: SECONDS
+  queries:
+    gcp:
+      select: average(gcp.redis.instance.stats.cpuUtilization)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+    gcpSample:
+      select: average(stats.CpuUtilization)
+      from: GcpRedisInstanceSample
+      eventId: entityGuid
+      eventName: entityName
+memoryUsageRatio:
+  title: Memory usage ratio (%)
+  unit: PERCENTAGE
+  queries:
+    gcp:
+      select: average(gcp.redis.instance.stats.memory.usageRatio)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+    gcpSample:
+      select: average(stats.memory.UsageRatio)
+      from: GcpRedisInstanceSample
+      eventId: entityGuid
+      eventName: entityName
+totalNetworkTrafficBytes:
+  title: Total network traffic (bytes)
+  unit: BYTES        
+  queries:
+    gcp:
+      select: average(gcp.redis.instance.stats.networkTraffic)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+    gcpSample:
+      select: average(stats.NetworkTraffic)
+      from: GcpRedisInstanceSample
+      eventId: entityGuid
+      eventName: entityName

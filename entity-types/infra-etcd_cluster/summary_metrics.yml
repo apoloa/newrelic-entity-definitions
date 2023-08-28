@@ -1,0 +1,8 @@
+maxObjectCounts:
+  goldenMetric: maxObjectCounts
+  title: Maximum object counts
+  unit: COUNT
+averageRequestDurationSum:
+  goldenMetric: averageRequestDurationSum
+  title: Average request duration sum (seconds)
+  unit: SECONDS

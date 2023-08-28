@@ -1,0 +1,12 @@
+queries_total:
+  goldenMetric: queries_total
+  title: Total number of queries by network.
+  unit: COUNT
+update_queries_total:
+  goldenMetric: update_queries_total
+  title: Total number of DNS update queries by status.
+  unit: COUNT
+exceptions_total:
+  goldenMetric: exceptions_total
+  title: Total number of exceptions by error.
+  unit: COUNT

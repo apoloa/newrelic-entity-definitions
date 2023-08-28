@@ -1,0 +1,13 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: AWS account
+  unit: STRING
+consumedReadCapacityUnits:
+  goldenMetric: consumedReadCapacityUnits
+  unit: COUNT
+  title: Consumed read capacity units
+consumedWriteCapacityUnits:
+  goldenMetric: consumedWriteCapacityUnits
+  unit: COUNT
+  title: Consumed write capacity units

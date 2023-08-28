@@ -1,0 +1,6 @@
+domain: INFRA
+type: VSPHEREDATASTORE
+goldenTags: []
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

@@ -1,0 +1,17 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: GCP account
+  unit: STRING
+cpu:
+  goldenMetric: cpu
+  unit: PERCENTAGE
+  title: CPU utilization
+memory:
+  goldenMetric: memory
+  unit: PERCENTAGE
+  title: Memory utilization
+disk:
+  goldenMetric: disk
+  unit: PERCENTAGE
+  title: Disk utilization

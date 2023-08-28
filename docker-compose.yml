@@ -1,0 +1,16 @@
+version: "3.3"
+services:
+  sanitize-dashboards:
+    build:
+      context: validator
+      dockerfile: sanitizeDashboards.Dockerfile
+    volumes:
+      - ./entity-types/:/entity-types/
+      - ./relationships/:/relationships/
+  validate-definitions:
+    build:
+      context: validator
+      dockerfile: validateDefinitions.Dockerfile
+    volumes:
+      - ./entity-types/:/entity-types/
+      - ./relationships/:/relationships/

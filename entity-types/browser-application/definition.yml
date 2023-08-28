@@ -1,0 +1,6 @@
+domain: BROWSER
+type: APPLICATION
+goldenTags: []
+configuration:
+  entityExpirationTime: QUARTERLY
+  alertable: true

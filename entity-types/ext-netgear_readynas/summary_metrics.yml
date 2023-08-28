@@ -1,0 +1,12 @@
+clusterUsedPercent:
+  goldenMetric: clusterUsedPercent
+  title: Cluster used %
+  unit: PERCENTAGE
+clusterUptime:
+  goldenMetric: clusterUptime
+  title: Uptime (days)
+  unit: COUNT
+failedDriveCount:
+  goldenMetric: failedDriveCount
+  title: Drive failures
+  unit: COUNT

@@ -1,0 +1,11 @@
+domain: INFRA
+type: AWSDYNAMODBGLOBALSECONDARYINDEX
+goldenTags:
+- aws.accountId
+- aws.awsRegion
+- aws.region
+- aws.indexParentTable
+- aws.indexStatus
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

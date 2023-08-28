@@ -1,0 +1,13 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: AWS account
+  unit: STRING
+requests:
+  goldenMetric: requests
+  unit: COUNT
+  title: Requests
+totalErrorRate:
+  goldenMetric: totalErrorRate
+  unit: PERCENTAGE
+  title: Error rate

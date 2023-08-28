@@ -1,0 +1,5 @@
+domain: INFRA
+type: GCPPUBSUBTOPIC
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

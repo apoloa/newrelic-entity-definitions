@@ -1,0 +1,12 @@
+avgProcTime:
+  goldenMetric: avgProcTime
+  title: Avg processing time
+  unit: SECONDS
+totalCount:
+  goldenMetric: totalCount
+  title: Total count
+  unit: COUNT
+errorCount:
+  goldenMetric: errorCount
+  title: Error count
+  unit: COUNT

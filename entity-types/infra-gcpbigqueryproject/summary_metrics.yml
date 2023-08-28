@@ -1,0 +1,13 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: GCP account
+  unit: STRING
+queries:
+  goldenMetric: queries
+  unit: COUNT
+  title: Queries
+executionTime:
+  goldenMetric: executionTime
+  unit: SECONDS
+  title: Execution time

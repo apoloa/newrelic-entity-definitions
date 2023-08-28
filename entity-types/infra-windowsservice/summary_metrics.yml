@@ -1,0 +1,15 @@
+serviceName:
+  unit: STRING
+  tag:
+    key: windowsService.name
+  title: Service name
+hostName:
+  unit: STRING
+  tag:
+    key: windowsService.hostname
+  title: Host name
+startMode:
+  unit: STRING
+  tag:
+    key: windowsService.startMode
+  title: Start mode

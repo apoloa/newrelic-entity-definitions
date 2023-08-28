@@ -1,0 +1,12 @@
+hostCpu:
+  goldenMetric: hostCpu
+  title: Host CPU utilization
+  unit: PERCENTAGE
+longTableScans:
+  goldenMetric: longTableScans
+  title: Long table scans
+  unit: OPERATIONS_PER_SECOND
+softParseRatio:
+  goldenMetric: softParseRatio
+  title: Soft parse ratio
+  unit: COUNT

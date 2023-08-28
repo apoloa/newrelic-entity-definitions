@@ -1,0 +1,9 @@
+domain: INFRA
+type: AWSELASTICSEARCHNODE
+goldenTags:
+- aws.accountId
+- aws.awsRegion
+- aws.region
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

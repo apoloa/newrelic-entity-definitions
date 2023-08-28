@@ -1,0 +1,17 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: AWS account
+  unit: STRING
+publishedMessages:
+  goldenMetric: publishedMessages
+  unit: COUNT
+  title: Published messages
+deliveredNotifications:
+  goldenMetric: deliveredNotifications
+  unit: COUNT
+  title: Delivered notifications
+failedNotifications:
+  goldenMetric: failedNotifications
+  unit: COUNT
+  title: Failed notifications

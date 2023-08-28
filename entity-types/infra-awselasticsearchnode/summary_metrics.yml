@@ -1,0 +1,17 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: AWS account
+  unit: STRING
+indexingRateReqsMin:
+  goldenMetric: indexingRateReqsMin
+  unit: REQUESTS_PER_SECOND
+  title: Indexing rate (reqs/min)
+searchRateOpsMin:
+  goldenMetric: searchRateOpsMin
+  unit: REQUESTS_PER_SECOND
+  title: Search rate (reqs/min)
+jvmMemoryPressure:
+  goldenMetric: jvmMemoryPressure
+  unit: PERCENTAGE
+  title: JVM mem pressure

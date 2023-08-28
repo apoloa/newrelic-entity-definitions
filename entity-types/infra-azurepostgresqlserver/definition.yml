@@ -1,0 +1,22 @@
+domain: INFRA
+type: AZUREPOSTGRESQLSERVER
+goldenTags:
+- azure.regionName
+- azure.subscriptionId
+- azure.type
+- azure.resourceGroupName
+- azure.version
+- azure.isReplica
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true
+synthesis:
+  rules:
+    - identifier: azure.resourceId
+      name: displayName
+      legacyFeatures:
+        overrideGuidType: true
+      encodeIdentifierInGUID: true
+      conditions:
+        - attribute: azure.resourceType
+          value: microsoft.dbforpostgresql/servers

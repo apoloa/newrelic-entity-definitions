@@ -1,0 +1,9 @@
+domain: INFRA
+type: AWSDYNAMODBREGION
+goldenTags:
+- aws.accountId
+- aws.awsRegion
+- aws.region
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

@@ -1,0 +1,13 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: AWS account
+  unit: STRING
+matches:
+  goldenMetric: matches
+  unit: COUNT
+  title: Successful invocations
+errors:
+  goldenMetric: errors
+  unit: COUNT
+  title: Failed invocations

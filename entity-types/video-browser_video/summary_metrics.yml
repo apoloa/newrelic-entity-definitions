@@ -1,0 +1,16 @@
+videoStartTime:
+  goldenMetric: videoStartTime
+  title: Median video start time (seconds)
+  unit: SECONDS
+interruptions:
+  goldenMetric: interruptions
+  title: Interruptions (count)
+  unit: COUNT
+rebufferTime:
+  goldenMetric: rebufferTime
+  title: Median connection rebuffer time (seconds)
+  unit: SECONDS
+contentErrors:
+  goldenMetric: contentErrors
+  title: Content errors (count)
+  unit: COUNT

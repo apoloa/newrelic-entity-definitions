@@ -1,0 +1,12 @@
+clusterUsedPercent:
+  goldenMetric: clusterUsedPercent
+  title: Cluster used %
+  unit: PERCENTAGE
+failedDriveCount:
+  goldenMetric: failedDriveCount
+  title: Drive failures
+  unit: COUNT
+hardwareUnhealthy:
+  goldenMetric: hardwareUnhealthy
+  title: Hardware status
+  unit: COUNT

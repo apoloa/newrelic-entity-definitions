@@ -1,0 +1,17 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: AWS account
+  unit: STRING
+readAndWriteOperations:
+  goldenMetric: readAndWriteOperations
+  unit: COUNT
+  title: Operations
+readTime:
+  goldenMetric: readTime
+  unit: SECONDS
+  title: Read time
+writeTime:
+  goldenMetric: writeTime
+  unit: SECONDS
+  title: Write time

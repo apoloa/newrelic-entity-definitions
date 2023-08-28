@@ -1,0 +1,12 @@
+cacheHits:
+  goldenMetric: cacheHits
+  unit: COUNT
+  title: Cache hits
+cacheMisses:
+  goldenMetric: cacheMisses
+  unit: COUNT
+  title: Cache misses
+latency:
+  goldenMetric: latency
+  unit: SECONDS
+  title: Max latency

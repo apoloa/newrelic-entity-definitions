@@ -1,0 +1,30 @@
+ConcurrentExecutions:
+  title: Max current executions
+  unit: COUNT
+  queries:
+    aws:
+      select: max(aws.lambda.ConcurrentExecutions.byFunction)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+    awsSample:
+      select: max(`provider.concurrentExecutions.Maximum`)
+      from: ServerlessSample
+      where: provider='LambdaRegion'
+      eventId: entityGuid
+      eventName: entityName
+UnreservedConcurrentExecutions:
+  title: Max unreserved current executions
+  unit: COUNT  
+  queries:
+    aws:
+      select: max(aws.lambda.UnreservedConcurrentExecutions)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+    awsSample:
+      select: max(`provider.unreservedConcurrentExecutions.Maximum`)
+      from: ServerlessSample
+      where: provider='LambdaRegion'
+      eventId: entityGuid
+      eventName: entityName

@@ -1,0 +1,13 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: AWS account
+  unit: STRING
+inServiceInstances:
+  goldenMetric: inServiceInstances
+  unit: COUNT
+  title: Instances
+desiredInstances:
+  goldenMetric: desiredInstances
+  unit: COUNT
+  title: Desired capacity

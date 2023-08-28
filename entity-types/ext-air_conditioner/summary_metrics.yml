@@ -1,0 +1,14 @@
+ipAddress:
+  title: IP address
+  unit: STRING
+  tag:
+    key: device_ip
+
+temperature:
+  goldenMetric: temperature
+  title: Temperature (C)
+  unit: CELSIUS
+relativeHumidity:
+  goldenMetric: relativeHumidity
+  title: Relative humidity (%)
+  unit: PERCENTAGE

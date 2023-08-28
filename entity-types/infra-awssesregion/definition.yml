@@ -1,0 +1,5 @@
+domain: INFRA
+type: AWSSESREGION
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

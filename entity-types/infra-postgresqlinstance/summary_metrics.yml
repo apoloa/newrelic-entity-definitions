@@ -1,0 +1,12 @@
+scheduledCheckpoints:
+  goldenMetric: scheduledCheckpoints
+  unit: OPERATIONS_PER_SECOND
+  title: Scheduled checkpoints
+requestedCheckpoints:
+  goldenMetric: requestedCheckpoints
+  unit: OPERATIONS_PER_SECOND
+  title: Requested checkpoints
+buffersAllocated:
+  goldenMetric: buffersAllocated
+  unit: OPERATIONS_PER_SECOND
+  title: Buffers allocated

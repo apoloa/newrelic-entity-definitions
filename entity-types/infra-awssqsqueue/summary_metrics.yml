@@ -1,0 +1,13 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: AWS account
+  unit: STRING
+sentMessages:
+  goldenMetric: sentMessages
+  unit: COUNT
+  title: Sent messages
+receivedMessages:
+  goldenMetric: receivedMessages
+  unit: COUNT
+  title: Received messages

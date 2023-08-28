@@ -1,0 +1,8 @@
+domain: INFRA
+type: GCPREDISINSTANCE
+goldenTags:
+- gcp.regionName
+- gcp.subscriptionId
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

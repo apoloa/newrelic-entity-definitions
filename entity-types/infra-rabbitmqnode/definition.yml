@@ -1,0 +1,7 @@
+domain: INFRA
+type: RABBITMQNODE
+goldenTags:
+- account
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

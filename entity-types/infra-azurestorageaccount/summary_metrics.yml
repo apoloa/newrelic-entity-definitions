@@ -1,0 +1,13 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: Azure account
+  unit: STRING
+transactions:
+  goldenMetric: transactions
+  unit: COUNT
+  title: Transactions
+availabilityPercent:
+  goldenMetric: availabilityPercent
+  unit: PERCENTAGE
+  title: Availability

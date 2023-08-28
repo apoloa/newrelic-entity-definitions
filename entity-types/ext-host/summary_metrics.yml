@@ -1,0 +1,22 @@
+localIp:
+  tag:
+    key: localIp
+  title: IP
+  unit: STRING
+shortHostname:
+  tag:
+    key: shortHostname
+  title: hostname
+  unit: STRING
+cpuPercent:
+  goldenMetric: cpuPercent
+  title: CPU percent
+  unit: PERCENTAGE
+memoryPercent:
+  goldenMetric: memoryPercent
+  title: Memory percent
+  unit: PERCENTAGE
+diskPercent:
+  goldenMetric: diskPercent
+  title: Disk percent
+  unit: PERCENTAGE

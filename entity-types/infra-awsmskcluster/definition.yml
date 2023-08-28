@@ -1,0 +1,8 @@
+domain: INFRA
+type: AWSMSKCLUSTER
+goldenTags:
+- aws.availabilityZone
+- aws.accountId
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

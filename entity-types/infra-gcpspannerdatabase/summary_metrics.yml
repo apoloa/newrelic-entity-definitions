@@ -1,0 +1,17 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: GCP account
+  unit: STRING
+requests:
+  goldenMetric: requests
+  unit: COUNT
+  title: Requests
+errorRate:
+  goldenMetric: errorRate
+  unit: PERCENTAGE
+  title: Error rate
+latency:
+  goldenMetric: latency
+  unit: SECONDS
+  title: Latency

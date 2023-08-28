@@ -1,0 +1,28 @@
+requests:
+  title: Requests
+  unit: COUNT
+  queries:
+    aws:
+      select: sum(aws.elasticbeanstalk.ApplicationRequestsTotal.byEnvironment)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+    awsSample:
+      select: sum(`provider.applicationRequestsTotal.Sum`)
+      from: ElasticBeanstalkEnvironmentSample
+      eventId: entityGuid
+      eventName: entityName
+latency:
+  title: Latency
+  unit: SECONDS
+  queries:
+    aws:
+      select: average(aws.elasticbeanstalk.ApplicationLatencyP99.9.byEnvironment)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+    awsSample:
+      select: average(`provider.applicationLatencyP99.9.Average`)
+      from: ElasticBeanstalkEnvironmentSample
+      eventId: entityGuid
+      eventName: entityName

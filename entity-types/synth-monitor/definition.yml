@@ -1,0 +1,11 @@
+domain: SYNTH
+type: MONITOR
+goldenTags:
+- monitorStatus
+- monitorType
+- period
+- publicLocation
+- privateLocation
+configuration:
+  entityExpirationTime: EIGHT_DAYS
+  alertable: true

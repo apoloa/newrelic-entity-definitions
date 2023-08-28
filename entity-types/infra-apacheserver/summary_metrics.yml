@@ -1,0 +1,12 @@
+requestsPerSecond:
+  goldenMetric: requestsPerSecond
+  unit: OPERATIONS_PER_SECOND
+  title: Requests
+idleWorkers:
+  goldenMetric: idleWorkers
+  unit: COUNT
+  title: Idle workers
+busyWorkers:
+  goldenMetric: busyWorkers
+  unit: COUNT
+  title: Busy workers

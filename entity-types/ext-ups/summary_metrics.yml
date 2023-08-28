@@ -1,0 +1,18 @@
+ipAddress:
+  title: IP address
+  unit: STRING
+  tag:
+    key: device_ip
+
+outputLoadCapacity:
+  goldenMetric: outputLoadCapacity
+  title: Load capacity
+  unit: PERCENTAGE
+batteryTemperature:
+  goldenMetric: batteryTemperature
+  title: Battery temp
+  unit: CELSIUS
+batteryTimeRemaining:
+  goldenMetric: batteryTimeRemaining
+  title: Battery run time remaining
+  unit: SECONDS

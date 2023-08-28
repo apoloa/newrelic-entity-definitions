@@ -1,0 +1,16 @@
+usedHDD:
+  goldenMetric: usedHDD
+  title: Avg used HDD %
+  unit: PERCENTAGE
+usedSSD:
+  goldenMetric: usedSSD
+  title: Avg used SSD %
+  unit: PERCENTAGE
+syncFailedJobs:
+  goldenMetric: syncFailedJobs
+  title: SyncIQ failures
+  unit: COUNT
+failedDriveCount:
+  goldenMetric: failedDriveCount
+  title: Drive failures
+  unit: COUNT

@@ -1,0 +1,24 @@
+ipAddress:
+  title: IP address
+  unit: STRING
+  tag:
+    key: device_ip
+
+flowType:
+  title: Flow type
+  unit: STRING
+  tag:
+    key: flow_type
+
+sources:
+  goldenMetric: sources
+  title: Sources
+  unit: COUNT
+destinations:
+  goldenMetric: destinations
+  title: Destinations
+  unit: COUNT
+packetsPerSecond:
+  goldenMetric: packetsPerSecond
+  title: Packets/second
+  unit: COUNT

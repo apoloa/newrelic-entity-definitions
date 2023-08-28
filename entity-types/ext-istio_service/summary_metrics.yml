@@ -1,0 +1,26 @@
+clusterName:
+  tag:
+    key: clusterName
+  title: Cluster
+  unit: STRING
+namespaceName:
+  tag:
+    key: namespaceName
+  title: Namespace
+  unit: STRING
+throughputInbound:
+  goldenMetric: throughputInbound
+  title: Throughput (inbound)
+  unit: REQUESTS_PER_SECOND
+throughputOutbound:
+  goldenMetric: throughputOutbound
+  title: Throughput (outbound)
+  unit: REQUESTS_PER_SECOND
+errorRate:
+  goldenMetric: errorRate
+  title: Error rate
+  unit: PERCENTAGE
+responseTimeMs:
+  goldenMetric: responseTimeMs
+  title: Response time
+  unit: SECONDS

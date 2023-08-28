@@ -1,0 +1,16 @@
+uptime:
+  goldenMetric: uptime
+  unit: SECONDS
+  title: Uptime
+connections:
+  goldenMetric: connections
+  unit: REQUESTS_PER_SECOND
+  title: Connections
+evictions:
+  goldenMetric: evictions
+  unit: OPERATIONS_PER_SECOND
+  title: Evictions
+hits:
+  goldenMetric: hits
+  unit: OPERATIONS_PER_SECOND
+  title: Hits

@@ -1,0 +1,16 @@
+cpuUsage:
+  goldenMetric: cpuUsage
+  unit: PERCENTAGE
+  title: CPU utilization
+memoryUsage:
+  goldenMetric: memoryUsage
+  unit: BYTES
+  title: Memory usage (MiB)
+memorySize:
+  goldenMetric: memorySize
+  unit: BYTES
+  title: Memory size (MiB)
+cpuAllocationlimit:
+  goldenMetric: cpuAllocationlimit
+  unit: HERTZ
+  title: CPU allocation limit

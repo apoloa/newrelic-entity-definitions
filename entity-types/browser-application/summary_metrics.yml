@@ -1,0 +1,24 @@
+throughputPpm:
+  goldenMetric: throughputPpm
+  unit: PAGES_PER_SECOND
+  title: Throughput (ppm)
+largestContentfulPaint75PercentileS:
+  goldenMetric: largestContentfulPaint75PercentileS
+  unit: SECONDS
+  title: Largest contentful paint (75 percentile) (s)
+firstInputDelay75PercentileMs:
+  goldenMetric: firstInputDelay75PercentileMs
+  unit: MS
+  title: First input delay (75 percentile) (ms)
+errors:
+  goldenMetric: errors
+  unit: COUNT
+  title: Errors
+pageLoadSeconds:
+  goldenMetric: pageLoadSeconds
+  unit: SECONDS
+  title: Pageload time (s)
+throughputAjax:
+  goldenMetric: throughputAjax
+  unit: REQUESTS_PER_MINUTE
+  title: Ajax throughput (rpm)

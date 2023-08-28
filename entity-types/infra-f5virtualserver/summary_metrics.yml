@@ -1,0 +1,12 @@
+availability:
+  goldenMetric: availability
+  title: Availability
+  unit: COUNT
+connectionsClientside:
+  goldenMetric: connectionsClientside
+  unit: OPERATIONS_PER_SECOND
+  title: Connections through client side
+usageRatio:
+  goldenMetric: usageRatio
+  unit: COUNT
+  title: Usage ratio

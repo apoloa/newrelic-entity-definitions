@@ -1,0 +1,10 @@
+domain: INFRA
+type: VSPHERECLUSTER
+goldenTags:
+- vsphere.clusterDatacenterLocation
+- vsphere.clusterDatacenterName
+- vsphere.clusterHostList
+- vsphere.clusterDatastoreList
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

@@ -1,0 +1,9 @@
+redisKeyspaceHitsPerSecond:
+  goldenMetric: redisKeyspaceHitsPerSecond
+  title: Keyspace hits per second
+  unit: OPERATIONS_PER_SECOND
+redisKeyspaceMissesPerSecond:
+  goldenMetric: redisKeyspaceMissesPerSecond
+  title: Keyspace misses per second
+  unit: OPERATIONS_PER_SECOND
+

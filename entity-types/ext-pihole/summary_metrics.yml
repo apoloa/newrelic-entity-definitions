@@ -1,0 +1,8 @@
+totalQueries:
+  goldenMetric: totalQueries
+  title: Total queries
+  unit: COUNT
+adsBlockedToday:
+  goldenMetric: adsBlockedToday
+  title: Ads blocked today
+  unit: COUNT

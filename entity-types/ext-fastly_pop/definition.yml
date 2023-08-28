@@ -1,0 +1,24 @@
+# Derived from the Fastly log ingestion, a datacenter is a Point of Presence
+# https://docs.fastly.com/en/guides/fastly-pop-locations
+domain: EXT
+type: FASTLY_POP
+
+synthesis:
+  identifier: fastly_datacenter
+  name: fastly_datacenter  
+  encodeIdentifierInGUID: false
+  conditions:
+    - attribute: fastly_datacenter
+  tags:
+    fastly_region:
+
+goldenTags:
+  - fastly_region
+
+dashboardTemplates:
+ newRelic:
+  template: fastly-pop_dashboard.json
+
+configuration:
+  entityExpirationTime: EIGHT_DAYS
+  alertable: true

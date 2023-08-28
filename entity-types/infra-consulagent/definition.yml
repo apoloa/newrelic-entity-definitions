@@ -1,0 +1,5 @@
+domain: INFRA
+type: CONSULAGENT
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

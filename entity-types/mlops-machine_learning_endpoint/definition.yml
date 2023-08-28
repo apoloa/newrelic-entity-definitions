@@ -1,0 +1,64 @@
+domain: MLOPS
+type: MACHINE_LEARNING_ENDPOINT
+synthesis:
+  rules:
+    - compositeIdentifier:
+        separator: ":"
+        attributes:
+          - aws.region
+          - aws.accountId
+          - aws..aws.sagemaker.endpoints.EndpointName
+      encodeIdentifierInGUID: true
+      name: aws..aws.sagemaker.endpoints.EndpointName
+      conditions:
+        - attribute: aws.Namespace
+          value: /aws/sagemaker/Endpoints
+      tags:
+        newrelic.cloudIntegrations.providerAccountId:
+          entityTagName: providerAccountId
+        newrelic.cloudIntegrations.providerAccountName:
+          entityTagName: providerAccountName
+        newrelic.cloudIntegrations.providerExternalId:
+          entityTagName: providerExternalId
+        aws..aws.sagemaker.endpoints.VariantName:
+          entityTagName: VariantName
+        aws.region:
+          entityTagName: aws.region
+        aws.accountId:
+          entityTagName: aws.accountId
+
+    - compositeIdentifier:
+        separator: ":"
+        attributes:
+          - aws.region
+          - aws.accountId
+          - aws.sagemaker.EndpointName
+      encodeIdentifierInGUID: true
+      name: aws.sagemaker.EndpointName
+      conditions:
+        - attribute: aws.Namespace
+          value: AWS/SageMaker
+      tags:
+        newrelic.cloudIntegrations.providerAccountId:
+          entityTagName: providerAccountId
+        newrelic.cloudIntegrations.providerAccountName:
+          entityTagName: providerAccountName
+        newrelic.cloudIntegrations.providerExternalId:
+          entityTagName: providerExternalId
+        aws.sagemaker.VariantName:
+          entityTagName: VariantName
+        aws.sagemaker.EndpointConfigName:
+          entityTagName: EndpointConfigName
+        aws.region:
+          entityTagName: aws.region
+        aws.accountId:
+          entityTagName: aws.accountId
+dashboardTemplates:
+  newRelic:
+    template: dashboard.json
+goldenTags:
+  - providerAccountId
+  - providerAccountName
+  - VariantName
+configuration:
+  alertable: true

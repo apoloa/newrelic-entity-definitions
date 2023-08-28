@@ -1,0 +1,13 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: AWS account
+  unit: STRING
+sends:
+  goldenMetric: sends
+  unit: COUNT
+  title: Sends
+deliveries:
+  goldenMetric: deliveries
+  unit: COUNT
+  title: Deliveries

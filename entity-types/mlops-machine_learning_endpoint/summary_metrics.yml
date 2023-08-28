@@ -1,0 +1,17 @@
+aws.region:
+  tag:
+    key: aws.region
+  title: AWS region
+  unit: STRING
+cpuUtilization:
+  goldenMetric: cpuUtilization
+  unit: PERCENTAGE
+  title: CPU utilization
+memoryUtilization:
+  goldenMetric: memoryUtilization
+  unit: PERCENTAGE
+  title: Memory utilization
+diskUtilization:
+  goldenMetric: diskUtilization
+  unit: PERCENTAGE
+  title: Disk utilization

@@ -1,0 +1,12 @@
+consumers:
+  goldenMetric: consumers
+  unit: COUNT
+  title: Consumers
+messagesDelivered:
+  goldenMetric: messagesDelivered
+  unit: COUNT
+  title: Sum messages delivered
+messagesDeliveredPerSecond:
+  goldenMetric: messagesDeliveredPerSecond
+  unit: OPERATIONS_PER_SECOND
+  title: Messages delivered per second

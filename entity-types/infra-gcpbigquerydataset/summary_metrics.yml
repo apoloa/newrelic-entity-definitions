@@ -1,0 +1,18 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: GCP account
+  unit: STRING
+zone:
+  unit: STRING
+  tag:
+    key: zone
+  title: Zone
+storedBytes:
+  goldenMetric: storedBytes
+  unit: BYTES
+  title: storedBytes
+tables:
+  goldenMetric: tables
+  unit: COUNT
+  title: tables

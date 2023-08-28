@@ -1,0 +1,17 @@
+providerAccountName:
+  title: Azure account
+  unit: STRING
+  tag:
+    key: providerAccountName
+requests:
+  goldenMetric: requests
+  title: Requests
+  unit: COUNT
+averageResponseTime:
+  goldenMetric: averageResponseTime
+  title: Average response time (ms)
+  unit: MS
+capacityPercent:
+  goldenMetric: capacityPercent
+  title: Capacity (%)
+  unit: PERCENTAGE

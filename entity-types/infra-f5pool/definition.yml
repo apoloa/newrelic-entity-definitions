@@ -1,0 +1,6 @@
+domain: INFRA
+type: F5POOL
+goldenTags: []
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

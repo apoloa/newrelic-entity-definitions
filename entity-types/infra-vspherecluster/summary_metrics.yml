@@ -1,0 +1,8 @@
+effectiveHosts:
+  goldenMetric: effectiveHosts
+  unit: COUNT
+  title: Effective hosts
+hostsCount:
+  goldenMetric: hostsCount
+  unit: COUNT
+  title: Hosts count

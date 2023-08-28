@@ -1,0 +1,12 @@
+cpuUsage:
+  goldenMetric: cpuUsage
+  unit: PERCENTAGE
+  title: CPU usage %
+memoryUsage:
+  goldenMetric: memoryUsage
+  unit: PERCENTAGE
+  title: Memory usage (%)
+memoryTotal:
+  goldenMetric: memoryTotal
+  unit: BYTES
+  title: Memory usage

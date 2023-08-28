@@ -1,0 +1,11 @@
+domain: INFRA
+type: AWSELB
+goldenTags:
+- aws.accountId
+- aws.awsRegion
+- aws.region
+- aws.vpcId
+- aws.dnsName
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

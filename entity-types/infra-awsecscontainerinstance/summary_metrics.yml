@@ -1,0 +1,13 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: AWS account
+  unit: STRING
+registeredCpu:
+  goldenMetric: registeredCpu
+  unit: COUNT
+  title: Registered CPUs
+registeredMemory:
+  goldenMetric: registeredMemory
+  unit: COUNT
+  title: Registered memory

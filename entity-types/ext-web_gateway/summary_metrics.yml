@@ -1,0 +1,26 @@
+ipAddress:
+  title: IP address
+  unit: STRING
+  tag:
+    key: device_ip
+
+cpuUtilization:
+  goldenMetric: cpuUtilization
+  title: CPU utilization (%)
+  unit: PERCENTAGE
+memoryUtilization:
+  goldenMetric: memoryUtilization
+  title: Memory utilization (%)
+  unit: PERCENTAGE
+allowedConnections:
+  goldenMetric: allowedConnections
+  title: Allowed connections
+  unit: COUNT
+blockedConnections:
+  goldenMetric: blockedConnections
+  title: Blocked connections
+  unit: COUNT
+transactionTime:
+  goldenMetric: transactionTime
+  title: Average transaction time (ms)
+  unit: SECONDS

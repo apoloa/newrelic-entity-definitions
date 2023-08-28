@@ -1,0 +1,13 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: AWS account
+  unit: STRING
+cpuUsage:
+  goldenMetric: cpuUsage
+  unit: PERCENTAGE
+  title: CPU utilization
+memoryUsage:
+  goldenMetric: memoryUsage
+  unit: PERCENTAGE
+  title: Memory utilization

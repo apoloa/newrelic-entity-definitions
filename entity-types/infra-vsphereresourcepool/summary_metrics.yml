@@ -1,0 +1,8 @@
+vmCount:
+  goldenMetric: vmCount
+  unit: COUNT
+  title: Virtual machines count
+memSwapped:
+  goldenMetric: memSwapped
+  unit: BYTES
+  title: Memory swapped

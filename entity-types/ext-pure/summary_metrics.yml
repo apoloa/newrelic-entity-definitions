@@ -1,0 +1,16 @@
+failedDriveCount:
+  goldenMetric: failedDriveCount
+  title: Failed drive count
+  unit: COUNT
+usedCapacityPercent:
+  goldenMetric: usedCapacityPercent
+  title: Used capacity %
+  unit: PERCENTAGE
+readLatency:
+  goldenMetric: readLatency
+  title: Read latency
+  unit: OPERATIONS_PER_SECOND
+writeLatency:
+  goldenMetric: writeLatency
+  title: Write latency
+  unit: OPERATIONS_PER_SECOND

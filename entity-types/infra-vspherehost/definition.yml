@@ -1,0 +1,12 @@
+domain: INFRA
+type: VSPHEREHOST
+goldenTags:
+- vsphere.hostClusterName
+- vsphere.hostOverallStatus
+- vsphere.hostDatacenterName
+- vsphere.hostResourcePoolNameList
+- vsphere.hostDatastoreNameList
+- vsphere.hostHypervisorHostname
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

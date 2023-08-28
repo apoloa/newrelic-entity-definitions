@@ -1,0 +1,26 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: AWS account
+  unit: STRING
+engine:
+  unit: STRING
+  tag:
+    key: aws.engine
+  title: Engine
+readThroughput:
+  goldenMetric: readThroughput
+  title: Read throughput
+  unit: BYTES
+writeThroughput:
+  goldenMetric: writeThroughput
+  title: Write throughput
+  unit: BYTES
+freeStorage:
+  goldenMetric: freeStorage
+  unit: BYTES
+  title: Free storage
+cpuUtilization:
+  goldenMetric: cpuUtilization
+  unit: PERCENTAGE
+  title: CPU utilization

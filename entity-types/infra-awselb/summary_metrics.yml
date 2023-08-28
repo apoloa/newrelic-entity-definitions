@@ -1,0 +1,17 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: AWS account
+  unit: STRING
+requests:
+  goldenMetric: requests
+  unit: REQUESTS_PER_SECOND
+  title: Throughput
+latency:
+  goldenMetric: latency
+  unit: SECONDS
+  title: Latency (s)
+surgeQueueLength:
+  goldenMetric: surgeQueueLength
+  unit: COUNT
+  title: Surge queue length

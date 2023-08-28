@@ -1,0 +1,18 @@
+zone:
+  title: Zone
+  unit: STRING
+  tag:
+    key: zone
+
+responseTimeMs:
+  goldenMetric: responseTimeMs
+  title: Response time
+  unit: SECONDS
+throughput:
+  goldenMetric: throughput
+  title: Throughput
+  unit: REQUESTS_PER_SECOND
+errorRate:
+  goldenMetric: errorRate
+  title: Error rate
+  unit: PERCENTAGE

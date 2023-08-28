@@ -1,0 +1,5 @@
+domain: INFRA
+type: MEMCACHEDINSTANCE
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

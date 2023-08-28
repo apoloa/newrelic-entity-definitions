@@ -1,0 +1,8 @@
+latency:
+  goldenMetric: latency
+  title: CDN latency
+  unit: SECONDS
+availability:
+  goldenMetric: availability
+  title: CDN availability
+  unit: PERCENTAGE

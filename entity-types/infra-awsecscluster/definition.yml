@@ -1,0 +1,10 @@
+domain: INFRA
+type: AWSECSCLUSTER
+goldenTags:
+- aws.awsRegion
+- aws.region
+- aws.clusterStatus
+- aws.accountId
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

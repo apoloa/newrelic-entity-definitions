@@ -1,0 +1,12 @@
+httpLiveTraffic:
+  goldenMetric: httpLiveTraffic
+  title: Current (in-flight) HTTP requests
+  unit: COUNT
+httpTraffic:
+  goldenMetric: httpTraffic
+  title: Sum of HTTP requests over a time period
+  unit: COUNT
+httpLatency:
+  goldenMetric: httpLatency
+  title: Average duration per HTTP request in seconds
+  unit: SECONDS

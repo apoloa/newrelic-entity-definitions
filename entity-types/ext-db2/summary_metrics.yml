@@ -1,0 +1,12 @@
+tablespaceFree:
+  goldenMetric: tablespaceFree
+  title: Tablespace free
+  unit: PERCENTAGE
+hitRatio:
+  goldenMetric: hitRatio
+  title: Hit ratio
+  unit: PERCENTAGE
+errorRate:
+  goldenMetric: errorRate
+  title: Error rate
+  unit: PERCENTAGE

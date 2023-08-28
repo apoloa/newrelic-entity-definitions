@@ -1,0 +1,8 @@
+hostsCount:
+  goldenMetric: hostsCount
+  title: Hosts count
+  unit: COUNT
+vmCount:
+  goldenMetric: vmCount
+  title: Virtual machines count
+  unit: COUNT

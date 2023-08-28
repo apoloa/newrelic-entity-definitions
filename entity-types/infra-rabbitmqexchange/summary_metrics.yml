@@ -1,0 +1,12 @@
+bindings:
+  goldenMetric: bindings
+  unit: COUNT
+  title: Bindings
+messagesPublishedPerChannel:
+  goldenMetric: messagesPublishedPerChannel
+  unit: COUNT
+  title: Messages published per channel
+messagesPublishedQueue:
+  goldenMetric: messagesPublishedQueue
+  unit: COUNT
+  title: Messages published queue

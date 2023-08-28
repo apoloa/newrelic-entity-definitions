@@ -1,0 +1,17 @@
+domain: INFRA
+type: AWSLAMBDAFUNCTIONALIAS
+goldenTags:
+- aws.region
+- aws.accountId
+- aws.aliasName
+- aws.functionName
+- aws.functionVersion
+- aws.resource
+- account
+- label.Team
+- label.team
+- label.env
+- label.environment
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

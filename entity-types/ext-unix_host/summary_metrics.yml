@@ -1,0 +1,12 @@
+cpuUtilizationPercent:
+  goldenMetric: cpuUtilizationPercent
+  title: CPU utilization (%)
+  unit: PERCENTAGE
+memoryUtilizationPercent:
+  goldenMetric: memoryUtilizationPercent
+  title: Memory utilization (%)
+  unit: PERCENTAGE
+networkUtilizationBps:
+  goldenMetric: networkUtilizationBps
+  title: Network throughput (bps)
+  unit: BYTES_PER_SECOND

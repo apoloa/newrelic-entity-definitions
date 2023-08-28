@@ -1,0 +1,10 @@
+domain: INFRA
+type: NGINXSERVER
+goldenTags:
+- nginx.port
+- nginx.version
+- nginx.edition
+- nginx.hostname
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

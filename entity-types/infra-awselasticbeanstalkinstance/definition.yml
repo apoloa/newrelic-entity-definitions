@@ -1,0 +1,12 @@
+domain: INFRA
+type: AWSELASTICBEANSTALKINSTANCE
+goldenTags:
+- aws.accountId
+- aws.availabilityZone
+- aws.awsRegion
+- aws.region
+- aws.applicationName
+- aws.environmentName
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

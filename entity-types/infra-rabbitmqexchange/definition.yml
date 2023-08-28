@@ -1,0 +1,7 @@
+domain: INFRA
+type: RABBITMQEXCHANGE
+goldenTags:
+- account
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

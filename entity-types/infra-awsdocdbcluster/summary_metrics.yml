@@ -1,0 +1,29 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: AWS account
+  unit: STRING
+cpuUsage:
+  goldenMetric: cpuUsage
+  title: CPU usage
+  unit: PERCENTAGE
+databaseConnections:
+  goldenMetric: databaseConnections
+  title: Database connections
+  unit: COUNT
+volumeBytesUsed:
+  goldenMetric: volumeBytesUsed
+  title: Storage consumption
+  unit: BYTES
+networkThroughput:
+  goldenMetric: networkThroughput
+  title: Network throughput
+  unit: BYTES_PER_SECOND
+writeIops:
+  goldenMetric: writeIops
+  title: Write IOPS
+  unit: OPERATIONS_PER_SECOND
+readIopos:
+  goldenMetric: readIopos
+  title: Read IOPS
+  unit: OPERATIONS_PER_SECOND

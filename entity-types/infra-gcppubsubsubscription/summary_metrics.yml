@@ -1,0 +1,13 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: GCP account
+  unit: STRING
+undeliveredMessages:
+  goldenMetric: undeliveredMessages
+  unit: COUNT
+  title: Undelivered messages
+outstandingSize:
+  goldenMetric: outstandingSize
+  unit: COUNT
+  title: Outstanding messages

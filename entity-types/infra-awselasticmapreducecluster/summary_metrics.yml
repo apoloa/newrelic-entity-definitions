@@ -1,0 +1,17 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: AWS account
+  unit: STRING
+availableMemoryBytes:
+  goldenMetric: availableMemoryBytes
+  title: Available memory
+  unit: BYTES
+completedApplications:
+  goldenMetric: completedApplications
+  title: Completed applications
+  unit: COUNT
+failedApplications:
+  goldenMetric: failedApplications
+  title: Failed applications
+  unit: COUNT

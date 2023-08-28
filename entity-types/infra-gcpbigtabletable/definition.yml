@@ -1,0 +1,8 @@
+domain: INFRA
+type: GCPBIGTABLETABLE
+goldenTags:
+- gcp.regionName
+- gcp.subscriptionId
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

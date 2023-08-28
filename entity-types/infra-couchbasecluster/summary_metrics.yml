@@ -1,0 +1,12 @@
+failovers:
+  goldenMetric: failovers
+  unit: COUNT
+  title: Failovers
+databaseFragmentation:
+  goldenMetric: databaseFragmentation
+  unit: PERCENTAGE
+  title: Level of compaction
+viewFragmentation:
+  goldenMetric: viewFragmentation
+  unit: PERCENTAGE
+  title: Fragmentation compaction trigger

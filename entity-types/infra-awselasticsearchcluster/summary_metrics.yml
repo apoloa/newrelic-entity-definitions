@@ -1,0 +1,17 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: AWS account
+  unit: STRING
+indexingRateReqsMin:
+  goldenMetric: indexingRateReqsMin
+  unit: REQUESTS_PER_MINUTE
+  title: Indexing rate
+searchRateOpsMin:
+  goldenMetric: searchRateOpsMin
+  unit: REQUESTS_PER_MINUTE
+  title: Search rate
+documents:
+  goldenMetric: documents
+  unit: COUNT
+  title: Documents

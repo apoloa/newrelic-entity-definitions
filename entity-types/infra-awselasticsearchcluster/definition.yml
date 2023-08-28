@@ -1,0 +1,10 @@
+domain: INFRA
+type: AWSELASTICSEARCHCLUSTER
+goldenTags:
+- aws.accountId
+- aws.awsRegion
+- aws.region
+- aws.vpcId
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

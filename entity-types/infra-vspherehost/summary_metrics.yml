@@ -1,0 +1,16 @@
+cpuUsage:
+  goldenMetric: cpuUsage
+  unit: PERCENTAGE
+  title: CPU usage (%)
+memoryFree:
+  goldenMetric: memoryFree
+  title: Free memory (MiB)
+  unit: BYTES
+memorySize:
+  goldenMetric: memorySize
+  title: Memory size (MiB)
+  unit: BYTES
+vmCount:
+  goldenMetric: vmCount
+  unit: COUNT
+  title: Virtual machines count

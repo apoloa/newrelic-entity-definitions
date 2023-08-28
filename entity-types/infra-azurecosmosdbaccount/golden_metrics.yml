@@ -1,0 +1,42 @@
+requests:
+  title: Requests
+  unit: COUNT 
+  queries:
+    azure:
+      select: sum(azure.documentdb.databaseaccounts.TotalRequests.byAccount)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+    azureSample:
+      select: sum(`totalRequests.Total`)
+      from: AzureCosmosDbAccountSample
+      eventId: entityGuid
+      eventName: entityName
+serviceAvailability:
+  title: Service availability (%)
+  unit: PERCENTAGE 
+  queries:
+    azure:
+      select: max(azure.documentdb.databaseaccounts.ServiceAvailability.byAccount)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+    azureSample:
+      select: max(`serviceAvailabilityPercent.Maximum`)
+      from: AzureCosmosDbAccountSample
+      eventId: entityGuid
+      eventName: entityName
+documents:
+  title: Documents
+  unit: COUNT 
+  queries:
+    azure:
+      select: sum(azure.documentdb.databaseaccounts.DocumentCount.byAccount)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+    azureSample:
+      select: sum(`documentCount.Total`)
+      from: AzureCosmosDbAccountSample
+      eventId: entityGuid
+      eventName: entityName

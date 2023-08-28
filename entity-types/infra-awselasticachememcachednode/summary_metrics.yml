@@ -1,0 +1,17 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: AWS account
+  unit: STRING
+getThroughput:
+  goldenMetric: getThroughput
+  unit: REQUESTS_PER_MINUTE
+  title: Get throughput
+getHitRatio:
+  goldenMetric: getMisses
+  unit: PERCENTAGE
+  title: Get hit rate
+swapUsage:
+  goldenMetric: swapUsage
+  unit: BYTES
+  title: Swap usage

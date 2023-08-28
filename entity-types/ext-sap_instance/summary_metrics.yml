@@ -1,0 +1,16 @@
+extendMemoryUsage:
+  goldenMetric: extendMemoryUsage
+  title: Extended memory usage %
+  unit: PERCENTAGE
+heapMemoryUsage:
+  goldenMetric: heapMemoryUsage
+  title: Heap memory usage %
+  unit: PERCENTAGE
+workProcessFree:
+  goldenMetric: workProcessFree
+  title: DIA work process free
+  unit: COUNT
+userLoggedOn:
+  goldenMetric: userLoggedOn
+  title: Users logged on
+  unit: COUNT

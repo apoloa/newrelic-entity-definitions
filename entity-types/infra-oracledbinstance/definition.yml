@@ -1,0 +1,6 @@
+domain: INFRA
+type: ORACLEDBINSTANCE
+goldenTags: []
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

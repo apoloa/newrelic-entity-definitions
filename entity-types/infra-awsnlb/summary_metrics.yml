@@ -1,0 +1,9 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: AWS account
+  unit: STRING
+consumedLcus:
+  goldenMetric: consumedLcus
+  unit: COUNT
+  title: Consumed LCUs

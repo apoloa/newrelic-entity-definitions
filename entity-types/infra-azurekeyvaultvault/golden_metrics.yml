@@ -1,0 +1,70 @@
+serviceApiHits:
+  title: Service API hits
+  unit: COUNT
+  queries:
+    azure:
+      select: average(azure.keyvault.vaults.ServiceApiHit)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+    azureSample:
+      select: average(serviceApiHit.Average)
+      from: AzureKeyVaultVaultSample
+      eventId: entityGuid
+      eventName: entityName
+serviceApiLatencyMs:
+  title: Service API latency (ms)
+  unit: MS
+  queries:
+    azure:
+      select: average(azure.keyvault.vaults.ServiceApiLatency)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+    azureSample:
+      select: average(serviceApiLatencyMilliseconds.Average)
+      from: AzureKeyVaultVaultSample
+      eventId: entityGuid
+      eventName: entityName
+serviceApiResults:
+  title: Service API results
+  unit: PERCENTAGE
+  queries:
+    azure:
+      select: average(azure.keyvault.vaults.ServiceApiResult)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+    azureSample:
+      select: average(serviceApiResult.Average)
+      from: AzureKeyVaultVaultSample
+      eventId: entityGuid
+      eventName: entityName
+vaultCapacityUsed:
+  title: Vault capacity used
+  unit: COUNT
+  queries:
+    azure:
+      select: average(azure.keyvault.vaults.SaturationShoebox)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+    azureSample:
+      select: average(saturationShoeboxPercent.Average)
+      from: AzureKeyVaultVaultSample
+      eventId: entityGuid
+      eventName: entityName
+vaultRequestsAvailability:
+  title: Vault requests availability
+  unit: COUNT
+  queries:
+    azure:
+      select: average(azure.keyvault.vaults.Availability)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+    azureSample:
+      select: average(availabilityPercent.Average)
+      from: AzureKeyVaultVaultSample
+      eventId: entityGuid
+      eventName: entityName

@@ -1,0 +1,30 @@
+unhealthyHosts:
+  title: Unhealthy hosts
+  unit: COUNT
+  queries:
+    aws:
+      select: max(aws.networkelb.UnHealthyHostCount)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+    awsSample:
+      select: max(provider.activeFlowCount.Maximum)
+      from: LoadBalancerSample
+      where: provider='NlbTargetGroup'
+      eventId: entityGuid
+      eventName: entityName
+healthyHosts:
+  title: Healthy hosts
+  unit: COUNT  
+  queries:
+    aws:
+      select: min(aws.networkelb.HealthyHostCount)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+    awsSample:
+      select: min(provider.healthyHostCount.Minimum)
+      from: LoadBalancerSample
+      where: provider='NlbTargetGroup'
+      eventId: entityGuid
+      eventName: entityName

@@ -1,0 +1,10 @@
+domain: APM
+type: APPLICATION
+goldenTags:
+- language
+- Environment
+- Team
+- Project
+configuration:
+  entityExpirationTime: QUARTERLY
+  alertable: true

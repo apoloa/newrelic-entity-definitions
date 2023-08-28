@@ -1,0 +1,17 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: AWS account
+  unit: STRING
+QueryDuration:
+  goldenMetric: QueryDuration
+  unit: COUNT
+  title: Max query duration
+CPUUtilization:
+  goldenMetric: CPUUtilization
+  unit: PERCENTAGE
+  title: CPU utilization
+DatabaseConnections:
+  goldenMetric: DatabaseConnections
+  unit: PERCENTAGE
+  title: Database connections

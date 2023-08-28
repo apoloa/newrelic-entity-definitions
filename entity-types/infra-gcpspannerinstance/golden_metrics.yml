@@ -1,0 +1,56 @@
+Nodes:
+  title: Number of nodes
+  unit: COUNT
+  queries:
+    gcp:
+      select: latest(gcp.spanner.instance.node_count)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+    gcpSample:
+      select: latest(`instance.nodes`)
+      from: GcpSpannerInstanceSample
+      eventId: entityGuid
+      eventName: entityName
+cpuUtilization:
+  title: Average cpu utilization
+  unit: PERCENTAGE
+  queries:
+    gcp:
+      select: average(gcp.spanner.instance.cpu.utilization)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+    gcpSample:
+      select: average(`instance.cpu.Utilization`)
+      from: GcpSpannerInstanceSample
+      eventId: entityGuid
+      eventName: entityName
+diskUsage:
+  title: Storage used in bytes
+  unit: BYTES
+  queries:
+    gcp:
+      select: average(gcp.spanner.instance.storage.used_bytes)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+    gcpSample:
+      select: average(`instance.storage.UsedBytes`)
+      from: GcpSpannerInstanceSample
+      eventId: entityGuid
+      eventName: entityName
+sessions:
+  title: Sessions in use
+  unit: COUNT        
+  queries:
+    gcp:
+      select: latest(gcp.spanner.instance.session_count)
+      from: Metric
+      eventId: entity.guid
+      eventName: entity.name
+    gcpSample:
+      select: latest(`instance.sessions`)
+      from: GcpSpannerInstanceSample
+      eventId: entityGuide
+      eventName: entityName

@@ -1,0 +1,18 @@
+ipAddress:
+  title: IP address
+  unit: STRING
+  tag:
+    key: device_ip
+
+systemUsage:
+  goldenMetric: systemUsage
+  title: System usage
+  unit: PERCENTAGE
+cpuUtilization:
+  goldenMetric: cpuUtilization
+  title: CPU
+  unit: PERCENTAGE
+memoryUtilization:
+  goldenMetric: memoryUtilization
+  title: Memory
+  unit: PERCENTAGE

@@ -1,0 +1,12 @@
+cpuUserUtilization:
+  goldenMetric: cpuUserUtilization
+  unit: PERCENTAGE
+  title: CPU used by user processes
+cpuSystemUtilization:
+  goldenMetric: cpuSystemUtilization
+  unit: PERCENTAGE
+  title: Average percentage of time CPU user use
+memoryUsed:
+  goldenMetric: memoryUsed
+  unit: BYTES
+  title: Total memory use

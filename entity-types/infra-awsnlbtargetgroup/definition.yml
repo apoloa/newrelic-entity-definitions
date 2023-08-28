@@ -1,0 +1,18 @@
+domain: INFRA
+type: AWSNLBTARGETGROUP
+goldenTags:
+- aws.awsRegion
+- aws.region
+- aws.port
+- aws.protocol
+- aws.matcher
+- aws.targetGroupName
+- aws.accountId
+- account
+- label.Team
+- label.team
+- label.env
+- label.environment
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

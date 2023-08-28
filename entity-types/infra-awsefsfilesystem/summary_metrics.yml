@@ -1,0 +1,13 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: AWS account
+  unit: STRING
+iops:
+  goldenMetric: iops
+  unit: BYTES_PER_SECOND
+  title: Total I/O
+iolimit:
+  goldenMetric: iolimit
+  unit: PERCENTAGE
+  title: I/O limit

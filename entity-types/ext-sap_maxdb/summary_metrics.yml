@@ -1,0 +1,12 @@
+dbDataSpaceUsage:
+  goldenMetric: dbDataSpaceUsage
+  title: Data space usage
+  unit: PERCENTAGE
+dbLogSpaceUsage:
+  goldenMetric: dbLogSpaceUsage
+  title: Log space usage
+  unit: PERCENTAGE
+responseTime:
+  goldenMetric: responseTime
+  title: Response time
+  unit: SECONDS

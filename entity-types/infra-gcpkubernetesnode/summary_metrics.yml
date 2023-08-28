@@ -1,0 +1,13 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: GCP account
+  unit: STRING
+cpuUsage:
+  goldenMetric: cpuUsage
+  unit: SECONDS
+  title: Cumulative CPU utilization over 60s
+memoryUsage:
+  goldenMetric: memoryUsage
+  unit: BYTES
+  title: Memory usage

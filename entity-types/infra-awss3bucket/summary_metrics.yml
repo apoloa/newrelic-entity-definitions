@@ -1,0 +1,25 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: AWS account
+  unit: STRING
+requests:
+  goldenMetric: requests
+  title: Requests
+  unit: COUNT
+errors4xxAnd5xx:
+  goldenMetric: errors4xxAnd5xx
+  title: Errors
+  unit: COUNT
+latency:
+  goldenMetric: latency
+  title: Latency
+  unit: SECONDS
+bytesDownloaded:
+  goldenMetric: bytesDownloaded
+  title: Bytes downloaded
+  unit: BYTES
+bytesUploaded:
+  goldenMetric: bytesUploaded
+  title: Bytes uploaded
+  unit: BYTES

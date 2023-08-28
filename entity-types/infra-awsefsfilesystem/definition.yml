@@ -1,0 +1,10 @@
+domain: INFRA
+type: AWSEFSFILESYSTEM
+goldenTags:
+- aws.accountId
+- aws.awsRegion
+- aws.region
+- aws.availabilityZone
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

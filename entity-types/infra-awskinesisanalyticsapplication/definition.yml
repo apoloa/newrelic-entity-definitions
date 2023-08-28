@@ -1,0 +1,10 @@
+domain: INFRA
+type: AWSKINESISANALYTICSAPPLICATION
+goldenTags:
+- aws.accountId
+- aws.availabilityZone
+- aws.awsRegion
+- aws.region
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

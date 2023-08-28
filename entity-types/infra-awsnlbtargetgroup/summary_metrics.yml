@@ -1,0 +1,13 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: AWS account
+  unit: STRING
+healthyHosts:
+  goldenMetric: healthyHosts
+  unit: COUNT
+  title: Healthy hosts
+unhealthyHosts:
+  goldenMetric: unhealthyHosts
+  unit: COUNT
+  title: Unhealthy hosts

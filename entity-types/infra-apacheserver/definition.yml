@@ -1,0 +1,9 @@
+domain: INFRA
+type: APACHESERVER
+goldenTags:
+- apache.hostname
+- apache.port
+- apache.version
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

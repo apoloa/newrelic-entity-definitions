@@ -1,0 +1,12 @@
+latency:
+  goldenMetric: latency
+  title: Latency (ms)
+  unit: SECONDS
+volume:
+  goldenMetric: volume
+  title: Volume
+  unit: COUNT
+lastActive:
+  goldenMetric: lastActive
+  title: Last active time
+  unit: TIMESTAMP

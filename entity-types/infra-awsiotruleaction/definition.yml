@@ -1,0 +1,5 @@
+domain: INFRA
+type: AWSIOTRULEACTION
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

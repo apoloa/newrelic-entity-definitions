@@ -1,0 +1,5 @@
+domain: INFRA
+type: GCPKUBERNETESNODE
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

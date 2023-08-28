@@ -1,0 +1,12 @@
+totalOperations:
+  goldenMetric: totalOperations
+  unit: OPERATIONS_PER_SECOND
+  title: Total operations
+missRatio:
+  goldenMetric: missRatio
+  unit: PERCENTAGE
+  title: Cache miss ratio
+hitRatio:
+  goldenMetric: hitRatio
+  unit: PERCENTAGE
+  title: Hit ratio

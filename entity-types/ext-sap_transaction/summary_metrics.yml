@@ -1,0 +1,8 @@
+avgResponseTime:
+  goldenMetric: avgResponseTime
+  title: Avg response time
+  unit: SECONDS
+numOfCalls:
+  goldenMetric: numOfCalls
+  title: Number of calls
+  unit: COUNT

@@ -1,0 +1,13 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: AWS account
+  unit: STRING
+CPUUtilization:
+  goldenMetric: CPUUtilization
+  unit: PERCENTAGE
+  title: CPU utilization
+PercentageDiskSpace:
+  goldenMetric: PercentageDiskSpace
+  unit: PERCENTAGE
+  title: Disk usage

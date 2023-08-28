@@ -1,0 +1,17 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: Azure account
+  unit: STRING
+requests:
+  goldenMetric: requests
+  unit: COUNT
+  title: Requests
+serverErrors5Xx:
+  goldenMetric: serverErrors5Xx
+  unit: COUNT
+  title: Errors
+averageResponseTimeS:
+  goldenMetric: averageResponseTimeS
+  unit: SECONDS
+  title: Response time

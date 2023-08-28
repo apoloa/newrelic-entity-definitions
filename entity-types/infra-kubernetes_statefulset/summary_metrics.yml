@@ -1,0 +1,22 @@
+clusterName:
+  title: Cluster name
+  unit: STRING
+  tag:
+    key: k8s.clusterName
+namespaceName:
+  title: Namespace name
+  unit: STRING
+  tag:
+    key: k8s.namespaceName
+podsDesired:
+  goldenMetric: podsDesired
+  unit: COUNT
+  title: Pods desired
+podsReady:
+  goldenMetric: podsReady
+  unit: COUNT
+  title: Pods ready
+podsMissing:
+  goldenMetric: podsMissing
+  unit: COUNT
+  title: Pods missing

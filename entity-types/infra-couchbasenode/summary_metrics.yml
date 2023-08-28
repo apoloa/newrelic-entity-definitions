@@ -1,0 +1,16 @@
+nodeStatusHealthy:
+  goldenMetric: nodeStatusHealthy
+  title: Node healthy
+  unit: COUNT
+nodeStatusNotHealthy:
+  goldenMetric: nodeStatusNotHealthy
+  title: Node not healthy
+  unit: COUNT
+uptime:
+  goldenMetric: uptime
+  title: Uptime
+  unit: SECONDS
+memoryfree:
+  goldenMetric: memoryfree
+  title: Memory free
+  unit: BYTES

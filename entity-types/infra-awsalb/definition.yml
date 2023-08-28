@@ -1,0 +1,19 @@
+domain: INFRA
+type: AWSALB
+goldenTags:
+- aws.awsRegion
+- aws.region
+- aws.state
+- aws.type
+- aws.ipAdressType
+- aws.dnsName
+- aws.scheme
+- aws.accountId
+- account
+- label.Team
+- label.team
+- label.env
+- label.environment
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

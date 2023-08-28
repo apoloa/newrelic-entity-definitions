@@ -1,0 +1,6 @@
+domain: INFRA
+type: VSPHERERESOURCEPOOL
+goldenTags: []
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

@@ -1,0 +1,22 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: AWS account
+  unit: STRING
+awsRegion:
+  tag:
+    key: aws.awsRegion
+  title: AWS region
+  unit: STRING
+cpuUsage:
+  goldenMetric: cpuUsage
+  title: CPU utilization
+  unit: PERCENTAGE
+memoryUsage:
+  goldenMetric: memoryUsage
+  title: Memory utilization
+  unit: PERCENTAGE
+runningTasksCount:
+  goldenMetric: runningTasksCount
+  title: Running tasks
+  unit: COUNT

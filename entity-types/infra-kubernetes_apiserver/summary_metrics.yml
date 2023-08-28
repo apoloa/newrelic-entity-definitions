@@ -1,0 +1,4 @@
+apiserverAuditEventTotal:
+  goldenMetric: apiserverAuditEventTotal
+  title: Total number of apiserver audit events
+  unit: COUNT

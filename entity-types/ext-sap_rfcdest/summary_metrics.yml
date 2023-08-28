@@ -1,0 +1,8 @@
+avgCallTime:
+  goldenMetric: avgCallTime
+  title: Avg call time
+  unit: SECONDS
+callCount:
+  goldenMetric: callCount
+  title: Number of RFC calls
+  unit: COUNT

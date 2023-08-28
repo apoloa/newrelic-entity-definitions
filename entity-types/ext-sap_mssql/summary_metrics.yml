@@ -1,0 +1,16 @@
+availability:
+  goldenMetric: availability
+  title: Availability
+  unit: PERCENTAGE
+spaceUsed:
+  goldenMetric: spaceUsed
+  title: Space used
+  unit: BYTES
+size:
+  goldenMetric: size
+  title: Cache hit ratio
+  unit: BYTES
+responseTime:
+  goldenMetric: responseTime
+  title: Response time
+  unit: SECONDS

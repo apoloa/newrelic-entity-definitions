@@ -1,0 +1,16 @@
+testLocations:
+  goldenMetric: testLocations
+  title: Total locations
+  unit: COUNT
+averageLatency:
+  goldenMetric: averageLatency
+  title: Average latency (s)
+  unit: SECONDS
+averageJitter:
+  goldenMetric: averageJitter
+  title: Average jitter (s)
+  unit: SECONDS
+packetLoss:
+  goldenMetric: packetLoss
+  title: Packet loss (%)
+  unit: PERCENTAGE

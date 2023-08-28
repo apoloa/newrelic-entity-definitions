@@ -1,0 +1,21 @@
+sources:
+  goldenMetric: sources
+  title: Unique sources
+  unit: COUNT
+destinations:
+  goldenMetric: destinations
+  title: Unique destinations
+  unit: COUNT
+egressBytes:
+  goldenMetric: egressBytes
+  title: Egress bytes
+  unit: BYTES
+ingressBytes:
+  goldenMetric: ingressBytes
+  title: Ingress bytes
+  unit: BYTES
+sampleRate:
+  title: Sample rate
+  unit: STRING
+  tag:
+    key: sample_rate

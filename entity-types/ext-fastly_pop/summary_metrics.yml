@@ -1,0 +1,18 @@
+region:
+  title: Fastly region
+  unit: STRING
+  tag:
+    key: fastly_region
+
+clients:
+  goldenMetric: clients
+  title: Unique clients
+  unit: COUNT
+response:
+  goldenMetric: response
+  title: Response OK rate
+  unit: PERCENTAGE
+cacheHitRate:
+  goldenMetric: cacheHitRate
+  title: Cache hit rate
+  unit: PERCENTAGE

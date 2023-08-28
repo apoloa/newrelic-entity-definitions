@@ -1,0 +1,17 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: AWS account
+  unit: STRING
+readThrottles:
+  goldenMetric: readThrottles
+  unit: COUNT
+  title: Read throttles
+writeThrottles:
+  goldenMetric: writeThrottles
+  unit: COUNT
+  title: Write throttles
+getitemLatencyMs:
+  goldenMetric: getitemLatencyMs
+  title: GetItem latency (ms)
+  unit: SECONDS

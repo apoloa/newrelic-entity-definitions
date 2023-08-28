@@ -1,0 +1,13 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: Azure account
+  unit: STRING
+cpuUsage:
+  goldenMetric: cpuUsage
+  unit: PERCENTAGE
+  title: CPU usage
+memoryUsage:
+  goldenMetric: memoryUsage
+  unit: PERCENTAGE
+  title: Memory usage

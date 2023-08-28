@@ -1,0 +1,12 @@
+totalMemoryUsedInBytes:
+  goldenMetric: totalMemoryUsedInBytes
+  unit: BYTES
+  title: Total memory used
+diskSpaceFreeInBytes:
+  goldenMetric: diskSpaceFreeInBytes
+  unit: BYTES
+  title: Disk space free
+fileDescriptorsTotalUsed:
+  goldenMetric: fileDescriptorsTotalUsed
+  unit: COUNT
+  title: File descriptors total used

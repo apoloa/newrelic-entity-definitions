@@ -1,0 +1,12 @@
+diskCount:
+  goldenMetric: diskCount
+  title: Disk count
+  unit: COUNT
+failedDriveCount:
+  goldenMetric: failedDriveCount
+  title: Failed drive occurences
+  unit: COUNT
+usedCapacityPercent:
+  goldenMetric: usedCapacityPercent
+  title: Used capacity %
+  unit: PERCENTAGE

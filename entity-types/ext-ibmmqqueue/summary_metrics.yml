@@ -1,0 +1,8 @@
+queueDepthPercent:
+  goldenMetric: queueDepthPercent
+  title: Queue depth (%)
+  unit: PERCENTAGE
+queueDepth:
+  goldenMetric: queueDepth
+  title: Queue depth (actual)
+  unit: COUNT

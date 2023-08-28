@@ -1,0 +1,12 @@
+keyspaceHitsPerSecond:
+  goldenMetric: keyspaceHitsPerSecond
+  unit: OPERATIONS_PER_SECOND
+  title: Keyspace hit ratio
+keyspaceMissesPerSecond:
+  goldenMetric: keyspaceMissesPerSecond
+  unit: OPERATIONS_PER_SECOND
+  title: Keyspace misses ratio
+connectedClients:
+  goldenMetric: connectedClients
+  unit: COUNT
+  title: Client connections

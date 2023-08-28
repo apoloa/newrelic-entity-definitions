@@ -1,0 +1,85 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "summary-metrics-schema-v1",
+  "type": "object",
+  "title": "Summary Metrics schema",
+  "description": "The contents of each summary metric.",
+  "minProperties": 1,
+  "examples": [{
+    "volumeRead": {
+      "title": "What the user is seeing (unit)",
+      "unit": "COUNT",
+      "goldenMetric": "volumeRead"
+    }
+  }],
+  "additionalProperties": {
+    "type": "object",
+    "required": [
+      "unit",
+      "title"
+    ],
+    "oneOf": [      {
+        "required": [
+          "goldenMetric"
+        ]
+      },
+      {
+        "required": [
+          "tag"
+        ]
+      }
+    ],
+    "properties": {
+      "title": {
+        "$id": "#/properties/title",
+        "type": "string",
+        "title": "The title",
+        "examples": [
+          "What the user is seeing (unit)"
+        ]
+      },
+      "unit": {
+        "$id": "#/properties/title/unit",
+        "type": "string",
+        "title": "The unit of the metric",
+        "enum": ["REQUESTS_PER_SECOND", "REQUESTS_PER_MINUTE", "PAGES_PER_SECOND", "MESSAGES_PER_SECOND", "OPERATIONS_PER_SECOND", "COUNT", "SECONDS", "MS", "PERCENTAGE", "BITS", "BYTES", "BITS_PER_SECOND", "BYTES_PER_SECOND", "HERTZ", "APDEX", "TIMESTAMP", "STRING", "CELSIUS"],
+        "examples": [
+          "COUNT"
+        ]
+      },
+      "tag": {
+        "$id": "#/properties/tag",
+        "type": "object",
+        "title": "The tag to build the metric from",
+        "description": "Information about the tag to get the summary metric.",
+        "examples": [{
+          "key": "tagKey"
+        }],
+        "required": [
+          "key"
+        ],
+        "properties": {
+          "key": {
+            "$id": "#/properties/tag/properties/key",
+            "type": "string",
+            "title": "The tag key you want to fetch the corresponding value for",
+            "examples": [
+              "environment"
+            ]
+          }
+        },
+        "additionalProperties": false
+      },
+      "goldenMetric": {
+        "$id": "#/properties/goldenMetric",
+        "type": "string",
+        "title": "The goldenMetric pointer",
+        "description": "The goldenMetric name that the summaryMetric will be calculated",
+        "examples": [
+          "throughput"
+        ]
+      }
+    },
+    "additionalProperties": false
+  }
+}

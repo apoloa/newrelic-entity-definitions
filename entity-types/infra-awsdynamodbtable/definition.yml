@@ -1,0 +1,11 @@
+domain: INFRA
+type: AWSDYNAMODBTABLE
+goldenTags:
+- aws.accountId
+- aws.awsRegion
+- aws.region
+- aws.availabilityZone
+- aws.tableStatus
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

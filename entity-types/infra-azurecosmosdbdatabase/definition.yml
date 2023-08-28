@@ -1,0 +1,10 @@
+domain: INFRA
+type: AZURECOSMOSDBDATABASE
+goldenTags:
+- azure.regionName
+- azure.subscriptionId
+- azure.type
+- azure.resourceGroupName
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

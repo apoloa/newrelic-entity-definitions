@@ -1,0 +1,12 @@
+incomingMessagesPerSecond:
+  goldenMetric: incomingMessagesPerSecond
+  unit: OPERATIONS_PER_SECOND
+  title: Incoming messages
+bytesWritten:
+  goldenMetric: bytesWritten
+  unit: OPERATIONS_PER_SECOND
+  title: Bytes written
+leaderElectionRate:
+  goldenMetric: leaderElectionRate
+  unit: OPERATIONS_PER_SECOND
+  title: Leader election rate

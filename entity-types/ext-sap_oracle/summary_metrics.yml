@@ -1,0 +1,16 @@
+dbAvailability:
+  goldenMetric: dbAvailability
+  title: DB availability
+  unit: PERCENTAGE
+dbSpaceUsed:
+  goldenMetric: dbSpaceUsed
+  title: DB space used
+  unit: BYTES
+dbBufferHitRatio:
+  goldenMetric: dbBufferHitRatio
+  title: Buffer hit ratio
+  unit: PERCENTAGE
+responseTime:
+  goldenMetric: responseTime
+  title: Response time
+  unit: SECONDS

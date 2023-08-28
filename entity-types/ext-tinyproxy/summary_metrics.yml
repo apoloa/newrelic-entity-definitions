@@ -1,0 +1,12 @@
+tinyproxyRequestsTotal:
+  goldenMetric: tinyproxyRequestsTotal
+  title: Requests (requests)
+  unit: COUNT
+tinyproxyConnectionsOpen:
+  goldenMetric: tinyproxyConnectionsOpen
+  title: Opened connections (connections per second)
+  unit: OPERATIONS_PER_SECOND
+tinyproxyConnectionsBadTotal:
+  goldenMetric: tinyproxyConnectionsBadTotal
+  title: Bad connections (connections)
+  unit: COUNT

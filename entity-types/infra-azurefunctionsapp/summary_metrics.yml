@@ -1,0 +1,13 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: Azure account
+  unit: STRING
+functionExecutionCount:
+  goldenMetric: functionExecutionCount
+  unit: COUNT
+  title: Executions
+errors:
+  goldenMetric: errors
+  unit: COUNT
+  title: Errors

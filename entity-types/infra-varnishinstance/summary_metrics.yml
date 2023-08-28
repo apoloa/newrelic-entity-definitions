@@ -1,0 +1,12 @@
+requests:
+  goldenMetric: requests
+  unit: COUNT
+  title: Back-end requests
+threads:
+  goldenMetric: threads
+  unit: COUNT
+  title: Total threads
+sessionsDropped:
+  goldenMetric: sessionsDropped
+  unit: COUNT
+  title: Sessions dropped

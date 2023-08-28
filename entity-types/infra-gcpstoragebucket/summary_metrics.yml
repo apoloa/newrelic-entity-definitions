@@ -1,0 +1,17 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: GCP account
+  unit: STRING
+receivedBytes:
+  goldenMetric: receivedBytes
+  unit: BYTES
+  title: Received
+sentBytes:
+  goldenMetric: sentBytes
+  unit: BYTES
+  title: Sent
+apiRequests:
+  goldenMetric: apiRequests
+  unit: COUNT
+  title: API calls

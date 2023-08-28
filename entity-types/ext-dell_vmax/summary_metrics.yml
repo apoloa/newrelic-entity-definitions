@@ -1,0 +1,12 @@
+healthScore:
+  goldenMetric: healthScore
+  title: Health score
+  unit: PERCENTAGE
+alertCount:
+  goldenMetric: alertCount
+  title: Alert count
+  unit: COUNT
+usedCapacityPercent:
+  goldenMetric: usedCapacityPercent
+  title: Used capacity %
+  unit: PERCENTAGE

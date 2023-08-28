@@ -1,0 +1,5 @@
+domain: INFRA
+type: WIN_SERVICE
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

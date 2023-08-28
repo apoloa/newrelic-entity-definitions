@@ -1,0 +1,13 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: AWS account
+  unit: STRING
+byteRate:
+  goldenMetric: byteRate
+  unit: BYTES
+  title: Bytes per minute
+packetRate:
+  goldenMetric: packetRate
+  unit: COUNT
+  title: Packets per minute

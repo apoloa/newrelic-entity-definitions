@@ -1,0 +1,12 @@
+poolActiveMembers:
+  goldenMetric: poolActiveMembers
+  unit: COUNT
+  title: Pool active members
+availability:
+  goldenMetric: availability
+  title: Pool availability status
+  unit: COUNT
+poolConnections:
+  goldenMetric: poolConnections
+  unit: COUNT
+  title: Pool connections

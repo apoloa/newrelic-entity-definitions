@@ -1,0 +1,16 @@
+availability:
+  goldenMetric: availability
+  title: Availability
+  unit: PERCENTAGE
+memoryUsed:
+  goldenMetric: memoryUsed
+  title: Memory used
+  unit: BYTES
+memoryAllocated:
+  goldenMetric: memoryAllocated
+  title: Memory allocated
+  unit: BYTES
+responseTime:
+  goldenMetric: responseTime
+  title: Response time
+  unit: SECONDS

@@ -1,0 +1,23 @@
+providerName:
+  tag:
+    key: instrumentation.provider
+  title: Provider
+  unit: STRING
+ipAddress:
+  title: IP address
+  unit: STRING
+  tag:
+    key: device_ip
+
+cpuUtilization:
+  goldenMetric: cpuUtilization
+  title: CPU
+  unit: PERCENTAGE
+memoryUtilization:
+  goldenMetric: memoryUtilization
+  title: Memory
+  unit: PERCENTAGE
+portStatus:
+  goldenMetric: portStatus
+  title: Offline ports
+  unit: COUNT

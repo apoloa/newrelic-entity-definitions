@@ -1,0 +1,43 @@
+deviceName:
+  tag:
+    key: device.name
+  title: Name
+  unit: STRING
+networkIp:
+  tag:
+    key: network.ip
+  title: IP
+  unit: STRING
+deviceVersion:
+  tag:
+    key: device.softwareVersion
+  title: Version
+  unit: STRING
+cpuPercent:
+  goldenMetric: cpuPercent
+  title: CPU percent
+  unit: PERCENTAGE
+memoryPercent:
+  goldenMetric: memoryPercent
+  title: Memory percent
+  unit: PERCENTAGE
+temperatureCelsius:
+  goldenMetric: temperatureCelsius
+  title: Temp celsius
+  unit: CELSIUS
+creditScore:
+  goldenMetric: creditScore
+  title: Credit score
+  unit: COUNT
+sharedUpload:
+  goldenMetric: sharedUpload
+  title: Shared upload
+  unit: BYTES
+sharedDownload:
+  goldenMetric: sharedDownload
+  title: Shared download
+  unit: BYTES
+inboundConnections:
+  goldenMetric: inboundConnections
+  title: Inbound connections
+  unit: COUNT

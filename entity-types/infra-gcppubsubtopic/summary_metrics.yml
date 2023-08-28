@@ -1,0 +1,13 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: GCP account
+  unit: STRING
+sendMessageRequests:
+  goldenMetric: sendMessageRequests
+  unit: MESSAGES_PER_SECOND
+  title: Send rate
+unackedMessages:
+  goldenMetric: unackedMessages
+  unit: COUNT
+  title: Unacknowledged messages

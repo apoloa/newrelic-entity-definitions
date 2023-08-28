@@ -1,0 +1,8 @@
+domain: INFRA
+type: GCPCLOUDSQL
+goldenTags:
+- gcp.projectId
+- gcp.zone
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

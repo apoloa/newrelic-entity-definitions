@@ -1,0 +1,8 @@
+domain: INFRA
+type: KAFKABROKER
+goldenTags:
+- kafka.clusterName
+- kafka.brokerId
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

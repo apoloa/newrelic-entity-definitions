@@ -1,0 +1,11 @@
+domain: INFRA
+type: CASSANDRANODE
+goldenTags:
+- cassandra.hostname
+- cassandra.port
+- cassandra.version
+- cassandra.clusterDatacenter
+- cassandra.clusterName
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

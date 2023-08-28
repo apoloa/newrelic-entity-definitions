@@ -1,0 +1,13 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: AWS Account
+  unit: STRING
+readIops:
+  goldenMetric: readIops
+  unit: COUNT
+  title: Read IOPS
+writeIops:
+  goldenMetric: writeIops
+  unit: COUNT
+  title: Write IOPS

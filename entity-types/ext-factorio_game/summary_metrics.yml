@@ -1,0 +1,12 @@
+hoursPlayed:
+  goldenMetric: hoursPlayed
+  title: Hours played
+  unit: COUNT
+totalPlayers:
+  goldenMetric: totalPlayers
+  title: Total players
+  unit: COUNT
+rocketsLaunched:
+  goldenMetric: rocketsLaunched
+  title: Rockets launched
+  unit: COUNT

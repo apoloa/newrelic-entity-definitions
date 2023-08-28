@@ -1,0 +1,8 @@
+nodeHealth:
+  goldenMetric: nodeHealth
+  title: Node health
+  unit: COUNT
+usedCapacityPercent:
+  goldenMetric: usedCapacityPercent
+  title: Used capacity %
+  unit: PERCENTAGE

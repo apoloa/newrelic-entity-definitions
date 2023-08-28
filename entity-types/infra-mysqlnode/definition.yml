@@ -1,0 +1,11 @@
+domain: INFRA
+type: MYSQLNODE
+goldenTags:
+- mysql.port
+- mysql.version
+- mysql.edition
+- mysql.hostname
+- mysql.clusterNodeType
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

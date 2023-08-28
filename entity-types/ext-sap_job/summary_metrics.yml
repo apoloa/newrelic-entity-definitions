@@ -1,0 +1,12 @@
+avgWaitTime:
+  goldenMetric: avgWaitTime
+  title: Avg wait time
+  unit: SECONDS
+avgExecutionTime:
+  goldenMetric: avgExecutionTime
+  title: Avg execution time
+  unit: SECONDS
+failedJobCount:
+  goldenMetric: failedJobCount
+  title: Failed job count
+  unit: COUNT

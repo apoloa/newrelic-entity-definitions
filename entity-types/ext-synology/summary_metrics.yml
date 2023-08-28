@@ -1,0 +1,16 @@
+volumeUsedPercent:
+  goldenMetric: volumeUsedPercent
+  title: Volume used %
+  unit: PERCENTAGE
+failedDriveCount:
+  goldenMetric: failedDriveCount
+  title: Failed drives
+  unit: COUNT
+cpuPercent:
+  goldenMetric: cpuPercent
+  title: CPU %
+  unit: PERCENTAGE
+usedRAM:
+  goldenMetric: usedRAM
+  title: RAM used %
+  unit: PERCENTAGE

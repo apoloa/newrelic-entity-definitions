@@ -1,0 +1,13 @@
+providerAccountName:
+  tag:
+    key: providerAccountName
+  title: Azure account
+  unit: STRING
+dtuCurrent:
+  goldenMetric: dtuCurrent
+  unit: COUNT
+  title: Current DTU
+dtuLimit:
+  goldenMetric: dtuLimit
+  unit: COUNT
+  title: Limit DTU

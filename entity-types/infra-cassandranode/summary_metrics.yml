@@ -1,0 +1,12 @@
+hits:
+  goldenMetric: hits
+  unit: COUNT
+  title: Key cache hit rate
+loadBytes:
+  goldenMetric: loadBytes
+  unit: BYTES
+  title: Size in bytes
+activePooltasks:
+  goldenMetric: activePooltasks
+  unit: COUNT
+  title: Active tasks

@@ -1,0 +1,16 @@
+usedCapacityPercent:
+  goldenMetric: usedCapacityPercent
+  title: Used capacity %
+  unit: PERCENTAGE
+writeLatency:
+  goldenMetric: writeLatency
+  title: Write latency
+  unit: SECONDS
+readLatency:
+  goldenMetric: readLatency
+  title: Read latency
+  unit: SECONDS
+packetDrops:
+  goldenMetric: packetDrops
+  title: Packet drops
+  unit: SECONDS
