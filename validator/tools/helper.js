@@ -58,4 +58,4 @@ class GithubHelper {
 
 }
 
-export default GithubHelper();
+export default new GithubHelper();
