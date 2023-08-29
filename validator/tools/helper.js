@@ -9,7 +9,7 @@ class GithubHelper {
 
     static VALID_GH_PR_EVENTS = [this.GH_PR_EVENT_APPROVE, this.GH_PR_EVENT_COMMENT, this.GH_PR_EVENT_PENDING, this.GH_PR_EVENT_REQUEST_CHANGES]
 
-    constructor(token){
+    constructor(){
         this.githubOwner = null;
         if(process.env.GITHUB_OWNER) {
             this.githubOwner = process.env.GITHUB_OWNER;
@@ -29,28 +29,26 @@ class GithubHelper {
                 auth: githubToken
             });
         }
-        this.enabled = true;
-        if(this.githubRepository == null || this.prNumber == null || this.octokit == null) {
-            this.enabled = false;
-        }
+
+        this.enabled = !(this.githubRepository == null || this.prNumber == null || this.octokit == null);
     }
 
     async createReviewPR(body, event) {
+        if (!this.enabled) {
+            return Promise.resolve();
+        }
         let prEvent = event
-        if(!VALID_GH_PR_EVENTS.includes(event)) {
-            prEvent = GH_PR_EVENT_PENDING;
+        if(!GithubHelper.VALID_GH_PR_EVENTS.includes(event)) {
+            prEvent = GithubHelper.GH_PR_EVENT_PENDING;
         }
         try {
-
-            let reviewPrRequest = {
+            await this.octokit.pulls.createReviewComment({
                 owner: this.githubOwner,
                 repo: this.githubRepository,
                 pull_number: this.prNumber,
                 body: body,
                 event: prEvent
-            }
-
-            await this.octokit.pulls.createReviewComment(reviewPrRequest);
+            });
         } catch (error) {
             console.error("Error to create the message:", error);
         }
@@ -58,4 +56,4 @@ class GithubHelper {
 
 }
 
-export default new GithubHelper();
+module.exports = new GithubHelper();
