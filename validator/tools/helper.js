@@ -11,12 +11,12 @@ class GithubHelper {
 
     constructor() {
         this.githubOwner = null;
-        if (process.env.GITHUB_OWNER) {
-            this.githubOwner = process.env.GITHUB_OWNER;
-        }
         this.githubRepository = null;
         if (process.env.GITHUB_REPOSITORY) {
-            this.githubRepository = process.env.GITHUB_REPOSITORY;
+            const githubOwnerRepo = process.env.GITHUB_REPOSITORY;
+            const githubParts = githubOwnerRepo.split("/");
+            this.githubOwner = githubParts[0];
+            this.githubRepository = githubParts[1];
         }
         this.prNumber = null;
         if (process.env.PR_NUMBER) {
@@ -43,8 +43,6 @@ class GithubHelper {
         }
         try {
             console.log("Doing request to Github API with the following data:")
-            console.log(this.githubRepository)
-            console.log(this.githubOwner)
             await this.octokit.pulls.createReviewComment({
                 owner: this.githubOwner,
                 repo: this.githubRepository,
@@ -57,5 +55,5 @@ class GithubHelper {
         }
     }
 }
-
+console.log(process.env)
 module.exports = new GithubHelper();
