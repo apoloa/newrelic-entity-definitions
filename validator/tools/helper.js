@@ -1,5 +1,5 @@
-const { Octokit } = require("@octokit/rest");
-import fetch from "node-fetch";
+const {Octokit} = require("@octokit/rest");
+const fetch = require("node-fetch");
 
 class GithubHelper {
 
