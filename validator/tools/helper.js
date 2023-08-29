@@ -42,6 +42,9 @@ class GithubHelper {
             prEvent = GithubHelper.GH_PR_EVENT_PENDING;
         }
         try {
+            console.log("Doing request to Github API with the following data:")
+            console.log(this.githubRepository)
+            console.log(this.githubOwner)
             await this.octokit.pulls.createReviewComment({
                 owner: this.githubOwner,
                 repo: this.githubRepository,
