@@ -1,5 +1,4 @@
 const {Octokit} = require("@octokit/rest");
-const fetch = require("node-fetch");
 
 class GithubHelper {
 
@@ -27,10 +26,7 @@ class GithubHelper {
         if (process.env.GITHUB_TOKEN) {
             let githubToken = process.env.GITHUB_TOKEN;
             this.octokit = new Octokit({
-                auth: githubToken,
-                request: {
-                    fetch: fetch
-                }
+                auth: githubToken
             });
         }
 
