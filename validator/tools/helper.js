@@ -55,4 +55,4 @@ class GithubHelper {
     }
 }
 
-module.exports = GithubHelper();
+module.exports = new GithubHelper();
