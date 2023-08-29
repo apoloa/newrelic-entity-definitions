@@ -1,4 +1,4 @@
-const { Octokit } = require("@octokit/rest");
+const {Octokit} = require("@octokit/rest");
 
 class GithubHelper {
 
@@ -9,17 +9,17 @@ class GithubHelper {
 
     static VALID_GH_PR_EVENTS = [this.GH_PR_EVENT_APPROVE, this.GH_PR_EVENT_COMMENT, this.GH_PR_EVENT_PENDING, this.GH_PR_EVENT_REQUEST_CHANGES]
 
-    constructor(){
+    constructor() {
         this.githubOwner = null;
-        if(process.env.GITHUB_OWNER) {
+        if (process.env.GITHUB_OWNER) {
             this.githubOwner = process.env.GITHUB_OWNER;
         }
         this.githubRepository = null;
-        if(process.env.GITHUB_REPOSITORY) {
+        if (process.env.GITHUB_REPOSITORY) {
             this.githubRepository = process.env.GITHUB_REPOSITORY;
         }
         this.prNumber = null;
-        if(process.env.PR_NUMBER) {
+        if (process.env.PR_NUMBER) {
             this.prNumber = process.env.PR_NUMBER;
         }
         this.octokit = null;
@@ -38,7 +38,7 @@ class GithubHelper {
             return Promise.resolve();
         }
         let prEvent = event
-        if(!GithubHelper.VALID_GH_PR_EVENTS.includes(event)) {
+        if (!GithubHelper.VALID_GH_PR_EVENTS.includes(event)) {
             prEvent = GithubHelper.GH_PR_EVENT_PENDING;
         }
         try {
@@ -53,7 +53,6 @@ class GithubHelper {
             console.error("Error to create the message:", error);
         }
     }
-
 }
 
 module.exports = new GithubHelper();
