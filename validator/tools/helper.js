@@ -5,7 +5,6 @@ class GithubHelper {
     static GH_PR_EVENT_APPROVE = "APPROVE";
     static GH_PR_EVENT_REQUEST_CHANGES = "REQUEST_CHANGES";
     static GH_PR_EVENT_COMMENT = "COMMENT";
-    static GH_PR_EVENT_PENDING = "PENDING";
 
     static VALID_GH_PR_EVENTS = [this.GH_PR_EVENT_APPROVE, this.GH_PR_EVENT_COMMENT, this.GH_PR_EVENT_PENDING, this.GH_PR_EVENT_REQUEST_CHANGES]
 
@@ -39,7 +38,7 @@ class GithubHelper {
         }
         let prEvent = event
         if (!GithubHelper.VALID_GH_PR_EVENTS.includes(event)) {
-            prEvent = GithubHelper.GH_PR_EVENT_PENDING;
+            prEvent = GithubHelper.GH_PR_EVENT_COMMENT;
         }
         try {
             console.log("Doing request to Github API with the following data:")
