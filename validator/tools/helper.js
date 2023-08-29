@@ -1,4 +1,4 @@
-const {Octokit} = require("@octokit/rest");
+const { Octokit } = require("@octokit/rest");
 
 class GithubHelper {
 
@@ -25,7 +25,7 @@ class GithubHelper {
         this.octokit = null;
         if (process.env.GITHUB_TOKEN) {
             let githubToken = process.env.GITHUB_TOKEN;
-            this.octokit = new OctoKit({
+            this.octokit = new Octokit({
                 auth: githubToken
             });
         }
@@ -55,4 +55,4 @@ class GithubHelper {
     }
 }
 
-module.exports = new GithubHelper();
+module.exports = GithubHelper();
