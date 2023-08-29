@@ -43,7 +43,7 @@ class GithubHelper {
         }
         try {
             console.log("Doing request to Github API with the following data:")
-            await this.octokit.pulls.createReviewComment({
+            await this.octokit.pulls.createReview({
                 owner: this.githubOwner,
                 repo: this.githubRepository,
                 pull_number: this.prNumber,
