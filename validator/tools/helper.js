@@ -47,7 +47,7 @@ class GithubHelper {
                 repo: this.githubRepository,
                 pull_number: this.prNumber,
                 body: body,
-                event: prEvent
+                event: this.GH_PR_EVENT_COMMENT
             });
         } catch (error) {
             console.error("Error to create the message:", error);
