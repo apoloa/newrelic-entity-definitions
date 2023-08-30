@@ -2,11 +2,11 @@ const {Octokit} = require("@octokit/rest");
 
 class GithubHelper {
 
-    static GH_PR_EVENT_APPROVE = "APPROVE";
-    static GH_PR_EVENT_REQUEST_CHANGES = "REQUEST_CHANGES";
-    static GH_PR_EVENT_COMMENT = "COMMENT";
+    GH_PR_EVENT_APPROVE = "APPROVE";
+    GH_PR_EVENT_REQUEST_CHANGES = "REQUEST_CHANGES";
+    GH_PR_EVENT_COMMENT = "COMMENT";
 
-    static VALID_GH_PR_EVENTS = [this.GH_PR_EVENT_APPROVE, this.GH_PR_EVENT_COMMENT, this.GH_PR_EVENT_PENDING, this.GH_PR_EVENT_REQUEST_CHANGES]
+    VALID_GH_PR_EVENTS = [this.GH_PR_EVENT_APPROVE, this.GH_PR_EVENT_COMMENT, this.GH_PR_EVENT_REQUEST_CHANGES]
 
     constructor() {
         this.githubOwner = null;
@@ -37,8 +37,8 @@ class GithubHelper {
             return Promise.resolve();
         }
         let prEvent = event
-        if (!GithubHelper.VALID_GH_PR_EVENTS.includes(event)) {
-            prEvent = GithubHelper.GH_PR_EVENT_COMMENT;
+        if (!this.VALID_GH_PR_EVENTS.includes(event)) {
+            prEvent = this.GH_PR_EVENT_COMMENT;
         }
         try {
             console.log("Doing request to Github API with the following data:")

@@ -14,19 +14,20 @@ function twoLookupResolvers(rule) {
     if (rule.relationship.source != null &&
         rule.relationship.target != null &&
         rule.relationship.source.hasOwnProperty("lookupGuid") &&
-        rule.relationship.target.hasOwnProperty("lookupGuid") ) {
-            throw rule.name + `: we don't allow two lookup resolvers`
+        rule.relationship.target.hasOwnProperty("lookupGuid")) {
+        throw rule.name + `: we don't allow two lookup resolvers`
     }
 }
 
-function exactlyOneResolver(rule){
-    function checkTwoResolvers(input, name, field){
+function exactlyOneResolver(rule) {
+    function checkTwoResolvers(input, name, field) {
         cont = 0
-        if (input.hasOwnProperty("lookupGuid")) cont +=1
-        if (input.hasOwnProperty("extractGuid")) cont +=1
-        if (input.hasOwnProperty("buildGuid")) cont +=1
-        if (cont >1) throw name + `: only one resolver is allowed per ` + field
+        if (input.hasOwnProperty("lookupGuid")) cont += 1
+        if (input.hasOwnProperty("extractGuid")) cont += 1
+        if (input.hasOwnProperty("buildGuid")) cont += 1
+        if (cont > 1) throw name + `: only one resolver is allowed per ` + field
     }
+
     if (rule.relationship.source == null)
         throw rule.name + " should have one resolver in the relationship source"
     else
@@ -52,21 +53,26 @@ const RULES = [
     }
 ]
 
+process.on('unhandledRejection', (reason, promise) => {
+    console.error('Unhandled Rejection no managed en:', promise, 'reason:', reason);
+});
+
 RULES.forEach(rule => {
-    ALL_RELATIONSHIP_SYNTHESIS = new Map()
-    utils.getAllRelationshipSynthesisDefinitions().then(
-        allRelationships => allRelationships.forEach(setOfDefinitionsInFile => {
-            setOfDefinitionsInFile.relationships.forEach(relationship => {
-                try {
-                    rule.apply(relationship)
-                } catch (errorMessage) {
-                    console.error(`Definition for ${relationship.name} violates rule "${rule.name}":`)
-                    console.error(errorMessage)
-                    // terminate early
-                    process.exit(1)
-                }
-            })
-        }))
-    .catch(err => console.log(err))
+        ALL_RELATIONSHIP_SYNTHESIS = new Map()
+        utils.getAllRelationshipSynthesisDefinitions()
+            .then(
+                allRelationships => allRelationships.forEach(setOfDefinitionsInFile => {
+                    setOfDefinitionsInFile.relationships.forEach(relationship => {
+                        try {
+                            rule.apply(relationship)
+                        } catch (errorMessage) {
+                            console.error(`Definition for ${relationship.name} violates rule "${rule.name}":`)
+                            console.error(errorMessage)
+                            // terminate early
+                            process.exit(1)
+                        }
+                    })
+                }))
+            .catch(err => console.log(err))
     }
 )
