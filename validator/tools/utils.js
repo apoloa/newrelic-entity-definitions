@@ -1,6 +1,7 @@
 const yaml = require('js-yaml')
 const fs = require('fs')
 const path = require('path')
+const githubHelper = require('./helper');
 const {readdir} = fs.promises
 const {DEFINITIONS_DIR} = require('./props')
 const {RELATIONSHIPS_SYNTHESIS_DIR} = require('./props')
@@ -20,12 +21,15 @@ module.exports = {
     async getAllRelationshipSynthesisDefinitions() {
         const files = await getFiles(RELATIONSHIPS_SYNTHESIS_DIR)
         const definitionFiles = files.filter(file => file.includes('.yml'))
-        return definitionFiles.map((filename) => {
-            justFileName = filename.split('/').pop()
-            if (regex.test(justFileName))
-                return yaml.load(fs.readFileSync(filename, 'utf8'))
-            else
-                throw 'Incorrect filename. Format must be <ORIGIN>-to-<TARGET>: ' + justFileName
+        return definitionFiles.map(async (filename) => {
+                justFileName = filename.split('/').pop()
+                if (regex.test(justFileName))
+                    return yaml.load(fs.readFileSync(filename, 'utf8'))
+                else {
+                    const message = 'Incorrect filename. Format must be <ORIGIN>-to-<TARGET>: ' + justFileName;
+                    await githubHelper.createReviewPR(message, githubHelper.GH_PR_EVENT_REQUEST_CHANGES);
+                    throw message;
+                }
             }
         )
     },
@@ -37,17 +41,17 @@ module.exports = {
             }
         )
     },
-    sanitizeDashboard(fileContent){
+    sanitizeDashboard(fileContent) {
         return fileContent
-                .replace(/\"accountId\"\s*:\s*\d+\s*/g , '"accountId": 0') // Anonymize account ID
-                .replace(/^.+\"linkedEntityGuids\".+\n?/mg , '')           // Remove linkedEntityGuids
-                .replace(/^.+\"permissions\".+\n?/mg , '')                 // Remove permissions
-                .replace(/^.+\"variables\"\s*:\s*\[\s*\]\n?/mg , '')           // Remove empty variables array, if the array is not empty, user should see an error during validation.
-                // Remove trailing commas - Pattern translation:
-                // A comma + positive look ahead for closing braces.
-                // Further, optional whitespaces and optional line breaks
-                // between comma and closing braces.
-                .replace(/\,(?=\s*[\r?\n]?\s*[\]\}])/g,'');
+            .replace(/\"accountId\"\s*:\s*\d+\s*/g, '"accountId": 0') // Anonymize account ID
+            .replace(/^.+\"linkedEntityGuids\".+\n?/mg, '')           // Remove linkedEntityGuids
+            .replace(/^.+\"permissions\".+\n?/mg, '')                 // Remove permissions
+            .replace(/^.+\"variables\"\s*:\s*\[\s*\]\n?/mg, '')           // Remove empty variables array, if the array is not empty, user should see an error during validation.
+            // Remove trailing commas - Pattern translation:
+            // A comma + positive look ahead for closing braces.
+            // Further, optional whitespaces and optional line breaks
+            // between comma and closing braces.
+            .replace(/\,(?=\s*[\r?\n]?\s*[\]\}])/g, '');
 
     }
 }
